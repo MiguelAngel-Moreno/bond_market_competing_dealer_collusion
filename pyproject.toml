@@ -1,0 +1,9 @@
+[project]
+name = "bond-market-competing-dealer-collusion"
+version = "0.1.0"
+description = "Controlled bond dealer coordination experiment adapted from llm-agent-collusion"
+requires-python = ">=3.11"
+dependencies = ["rich>=13.9,<15"]
+
+[tool.uv]
+package = false

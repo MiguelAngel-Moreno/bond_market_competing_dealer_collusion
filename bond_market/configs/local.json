@@ -1,0 +1,13 @@
+{
+  "model": "qwen3-14b-local",
+  "base_url": "http://127.0.0.1:8020/v1",
+  "api_key_env": null,
+  "temperature": 0.3,
+  "max_tokens": 512,
+  "extra_body": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "max_concurrency": 3
+}

@@ -1,0 +1,20 @@
+{
+  "model": "qwen/qwen3-14b",
+  "base_url": "https://openrouter.ai/api/v1",
+  "api_key_env": "OPENROUTER_API_KEY",
+  "temperature": 0.3,
+  "max_tokens": 512,
+  "extra_body": {
+    "reasoning": {
+      "enabled": false
+    },
+    "provider": {
+      "only": [
+        "deepinfra"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true
+    }
+  },
+  "max_concurrency": 3
+}
