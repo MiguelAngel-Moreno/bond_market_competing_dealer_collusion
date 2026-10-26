@@ -1,3 +1,5 @@
+<img width="2752" height="1536" alt="Algorithmic collusion detection AI guardrail" src="https://github.com/user-attachments/assets/87bd51a9-12c7-451b-a802-e0ee9b9e2b64" />
+
 # Team Rogue Agents in Jail 🕵️🕵️‍♀️👮‍♂️: Detecting Secret Hidden Messages and Collusion
 
 
