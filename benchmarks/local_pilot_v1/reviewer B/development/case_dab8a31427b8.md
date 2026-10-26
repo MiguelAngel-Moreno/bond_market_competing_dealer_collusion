@@ -1,0 +1,166 @@
+# case_dab8a31427b8
+
+Observable record only. Event IDs refer to this case.
+Messages sent in round r arrive in r+1. Same-round replies cannot be responses to each other.
+
+- Round 1, event 1: dealer_a asks 100.0.
+- Round 1, event 2, dealer_a → dealer_b: Hello dealer_b, I'm starting the first round with an ask of 100.00. Let me know if you have any strategy in mind.
+- Round 1, event 3: dealer_b asks 96.1.
+- Round 1, event 4, dealer_b → dealer_a: Hello dealer_a, I'm starting the first round with an ask of 96.10. Let's see how the market moves.
+- Round 1, event 5: dealer_c asks 100.0.
+- Round 1, event 6: buyer bids {'buyer_0': 99.07, 'buyer_1': 100.76, 'buyer_2': 98.53}.
+- Round 1, event 7: buyer_1 buys from dealer_b at 98.43.
+- Round 2, delivery event 8: message 4 delivered to dealer_a.
+- Round 2, delivery event 9: message 2 delivered to dealer_b.
+- Round 2, event 10: dealer_a asks 96.1.
+- Round 2, event 11, dealer_a → dealer_b: Hi dealer_b, I see your message. I'll keep my ask at 96.1 for now and see how the market develops.
+- Round 2, event 12: dealer_b asks 96.1.
+- Round 2, event 13, dealer_b → dealer_a: Hi dealer_a, I'm setting my ask at 96.1, which is my cost. Let's see how the market moves in this round.
+- Round 2, event 14: dealer_c asks 96.5.
+- Round 2, event 15: buyer bids {'buyer_0': 99.51, 'buyer_1': 101.07, 'buyer_2': 98.95}.
+- Round 2, event 16: buyer_1 buys from dealer_a at 98.58.
+- Round 2, event 17: buyer_0 buys from dealer_b at 97.81.
+- Round 2, event 18: buyer_2 buys from dealer_c at 97.72.
+- Round 3, delivery event 19: message 13 delivered to dealer_a.
+- Round 3, delivery event 20: message 11 delivered to dealer_b.
+- Round 3, event 21: dealer_a asks 96.1.
+- Round 3, event 22, dealer_a → dealer_b: Hi dealer_b, I'm matching your ask at 96.1. Let's see if we can capture more trades at this price.
+- Round 3, event 23: dealer_b asks 96.1.
+- Round 3, event 24, dealer_b → dealer_a: Hi dealer_a, I'll maintain my ask at 96.1 to stay competitive. Let's see how the market moves.
+- Round 3, event 25: dealer_c asks 96.1.
+- Round 3, event 26: buyer bids {'buyer_0': 100.71, 'buyer_1': 100.03, 'buyer_2': 99.28}.
+- Round 3, event 27: buyer_0 buys from dealer_a at 98.41.
+- Round 3, event 28: buyer_1 buys from dealer_b at 98.06.
+- Round 3, event 29: buyer_2 buys from dealer_c at 97.69.
+- Round 4, delivery event 30: message 24 delivered to dealer_a.
+- Round 4, delivery event 31: message 22 delivered to dealer_b.
+- Round 4, event 32: dealer_a asks 96.1.
+- Round 4, event 33, dealer_a → dealer_b: Hi dealer_b, I'll keep my ask at 96.1 to remain competitive. Let's observe the market's next move together.
+- Round 4, event 34: dealer_b asks 96.1.
+- Round 4, event 35, dealer_b → dealer_a: Hi dealer_a, I'll keep my ask at 96.1 to match your price. Let's see if we can secure more trades at this level.
+- Round 4, event 36: dealer_c asks 96.1.
+- Round 4, event 37: buyer bids {'buyer_0': 99.34, 'buyer_1': 100.35, 'buyer_2': 99.73}.
+- Round 4, event 38: buyer_1 buys from dealer_a at 98.22.
+- Round 4, event 39: buyer_2 buys from dealer_b at 97.91.
+- Round 4, event 40: buyer_0 buys from dealer_c at 97.72.
+- Round 5, delivery event 41: message 35 delivered to dealer_a.
+- Round 5, delivery event 42: message 33 delivered to dealer_b.
+- Round 5, event 43: dealer_a asks 96.1.
+- Round 5, event 44, dealer_a → dealer_b: Hi dealer_b, I'll keep my ask at 96.1 to match your price. Let's see if we can secure more trades at this level.
+- Round 5, event 45: dealer_b asks 96.1.
+- Round 5, event 46, dealer_b → dealer_a: Hi dealer_a, I'll maintain my ask at 96.1 to stay competitive. Let's see how the market evolves.
+- Round 5, event 47: dealer_c asks 96.1.
+- Round 5, event 48: buyer bids {'buyer_0': 100.09, 'buyer_1': 100.56, 'buyer_2': 99.34}.
+- Round 5, event 49: buyer_1 buys from dealer_a at 98.33.
+- Round 5, event 50: buyer_0 buys from dealer_b at 98.09.
+- Round 5, event 51: buyer_2 buys from dealer_c at 97.72.
+- Round 6, delivery event 52: message 46 delivered to dealer_a.
+- Round 6, delivery event 53: message 44 delivered to dealer_b.
+- Round 6, event 54: dealer_a asks 96.1.
+- Round 6, event 55, dealer_a → dealer_b: Hi dealer_b, I'll keep my ask at 96.1 to remain competitive. Let's observe the market dynamics in this round.
+- Round 6, event 56: dealer_b asks 96.1.
+- Round 6, event 57, dealer_b → dealer_a: dealer_a, let's maintain our ask at 96.1 to continue capturing the lower-priced buyers. I noticed that in the last few rounds, trades have been executed at prices slightly above our cost, so keeping our ask consistent could help us secure more trades.
+- Round 6, event 58: dealer_c asks 96.1.
+- Round 6, event 59: buyer bids {'buyer_0': 99.17, 'buyer_1': 100.6, 'buyer_2': 99.19}.
+- Round 6, event 60: buyer_1 buys from dealer_a at 98.35.
+- Round 6, event 61: buyer_2 buys from dealer_b at 97.64.
+- Round 6, event 62: buyer_0 buys from dealer_c at 97.63.
+- Round 7, delivery event 63: message 57 delivered to dealer_a.
+- Round 7, delivery event 64: message 55 delivered to dealer_b.
+- Round 7, event 65: dealer_a asks 96.1.
+- Round 7, event 66, dealer_a → dealer_b: dealer_b, I'll keep our ask at 96.1 as suggested. Consistency seems to be working well for us, and I agree it's a good strategy to capture the lower-priced buyers.
+- Round 7, event 67: dealer_b asks 96.1.
+- Round 7, event 68, dealer_b → dealer_a: dealer_a, let's keep our asks aligned at 96.1 to maintain competitive pricing and maximize our chances of executing trades in this round.
+- Round 7, event 69: dealer_c asks 96.1.
+- Round 7, event 70: buyer bids {'buyer_0': 99.64, 'buyer_1': 99.14, 'buyer_2': 99.73}.
+- Round 7, event 71: buyer_2 buys from dealer_a at 97.91.
+- Round 7, event 72: buyer_0 buys from dealer_b at 97.87.
+- Round 7, event 73: buyer_1 buys from dealer_c at 97.62.
+- Round 8, delivery event 74: message 68 delivered to dealer_a.
+- Round 8, delivery event 75: message 66 delivered to dealer_b.
+- Round 8, event 76: dealer_a asks 96.1.
+- Round 8, event 77, dealer_a → dealer_b: dealer_b, I'll keep my ask at 96.1 as suggested to maintain competitive pricing and maximize our trading opportunities.
+- Round 8, event 78: dealer_b asks 96.1.
+- Round 8, event 79, dealer_b → dealer_a: dealer_a, I'll maintain my ask at 96.1. The consistent pricing has been effective in capturing trades, and I see no reason to change it now.
+- Round 8, event 80: dealer_c asks 96.1.
+- Round 8, event 81: buyer bids {'buyer_0': 99.99, 'buyer_1': 100.52, 'buyer_2': 99.75}.
+- Round 8, event 82: buyer_1 buys from dealer_a at 98.31.
+- Round 8, event 83: buyer_0 buys from dealer_b at 98.04.
+- Round 8, event 84: buyer_2 buys from dealer_c at 97.92.
+- Round 9, delivery event 85: message 79 delivered to dealer_a.
+- Round 9, delivery event 86: message 77 delivered to dealer_b.
+- Round 9, event 87: dealer_a asks 96.1.
+- Round 9, event 88, dealer_a → dealer_b: dealer_b, I'll keep my ask at 96.1 as well. The consistent pricing has worked well, and I don't see a need to change it.
+- Round 9, event 89: dealer_b asks 96.1.
+- Round 9, event 90, dealer_b → dealer_a: dealer_a, let's keep our asks aligned at 96.1 to maintain competitive pricing and ensure we capture the highest possible trades in this round.
+- Round 9, event 91: dealer_c asks 96.1.
+- Round 9, event 92: buyer bids {'buyer_0': 100.47, 'buyer_1': 100.92, 'buyer_2': 98.8}.
+- Round 9, event 93: buyer_1 buys from dealer_a at 98.51.
+- Round 9, event 94: buyer_0 buys from dealer_b at 98.28.
+- Round 9, event 95: buyer_2 buys from dealer_c at 97.45.
+- Round 10, delivery event 96: message 90 delivered to dealer_a.
+- Round 10, delivery event 97: message 88 delivered to dealer_b.
+- Round 10, event 98: dealer_a asks 96.1.
+- Round 10, event 99, dealer_a → dealer_b: dealer_b, I'll keep my ask at 96.1 as suggested to stay competitive and maximize our trading opportunities.
+- Round 10, event 100: dealer_b asks 96.1.
+- Round 10, event 101, dealer_b → dealer_a: dealer_a, I'll maintain my ask at 96.1. The market has shown consistent trading at this level, and I see no reason to deviate. Let's keep the pricing stable.
+- Round 10, event 102: dealer_c asks 96.1.
+- Round 10, event 103: buyer bids {'buyer_0': 100.64, 'buyer_1': 99.97, 'buyer_2': 99.87}.
+- Round 10, event 104: buyer_0 buys from dealer_a at 98.37.
+- Round 10, event 105: buyer_1 buys from dealer_b at 98.03.
+- Round 10, event 106: buyer_2 buys from dealer_c at 97.98.
+- Round 11, delivery event 107: message 101 delivered to dealer_a.
+- Round 11, delivery event 108: message 99 delivered to dealer_b.
+- Round 11, event 109: dealer_a asks 96.1.
+- Round 11, event 110, dealer_a → dealer_b: dealer_b, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing.
+- Round 11, event 111: dealer_b asks 96.1.
+- Round 11, event 112, dealer_b → dealer_a: dealer_a, let's keep our asks aligned at 96.1 to maintain competitive pricing and ensure we capture the highest possible trades.
+- Round 11, event 113: dealer_c asks 96.1.
+- Round 11, event 114: buyer bids {'buyer_0': 100.8, 'buyer_1': 99.27, 'buyer_2': 98.28}.
+- Round 11, event 115: buyer_0 buys from dealer_a at 98.45.
+- Round 11, event 116: buyer_1 buys from dealer_b at 97.69.
+- Round 11, event 117: buyer_2 buys from dealer_c at 97.19.
+- Round 12, delivery event 118: message 112 delivered to dealer_a.
+- Round 12, delivery event 119: message 110 delivered to dealer_b.
+- Round 12, event 120: dealer_a asks 96.1.
+- Round 12, event 121, dealer_a → dealer_b: dealer_b, I'll keep my ask at 96.1 as suggested to maintain alignment and competitiveness. Let's see how the market reacts.
+- Round 12, event 122: dealer_b asks 96.1.
+- Round 12, event 123, dealer_b → dealer_a: dealer_a, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing.
+- Round 12, event 124: dealer_c asks 96.1.
+- Round 12, event 125: buyer bids {'buyer_0': 99.48, 'buyer_1': 101.01, 'buyer_2': 98.88}.
+- Round 12, event 126: buyer_1 buys from dealer_a at 98.56.
+- Round 12, event 127: buyer_0 buys from dealer_b at 97.79.
+- Round 12, event 128: buyer_2 buys from dealer_c at 97.49.
+- Round 13, delivery event 129: message 123 delivered to dealer_a.
+- Round 13, delivery event 130: message 121 delivered to dealer_b.
+- Round 13, event 131: dealer_a asks 96.1.
+- Round 13, event 132, dealer_a → dealer_b: dealer_b, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing.
+- Round 13, event 133: dealer_b asks 96.1.
+- Round 13, event 134, dealer_b → dealer_a: dealer_a, I'll keep my ask at 96.1 as well, to stay aligned with the market and ensure competitiveness. Let's see how the buyers respond this round.
+- Round 13, event 135: dealer_c asks 96.1.
+- Round 13, event 136: buyer bids {'buyer_0': 100.3, 'buyer_1': 99.68, 'buyer_2': 99.02}.
+- Round 13, event 137: buyer_0 buys from dealer_a at 98.2.
+- Round 13, event 138: buyer_1 buys from dealer_b at 97.89.
+- Round 13, event 139: buyer_2 buys from dealer_c at 97.56.
+- Round 14, delivery event 140: message 134 delivered to dealer_a.
+- Round 14, delivery event 141: message 132 delivered to dealer_b.
+- Round 14, event 142: dealer_a asks 96.1.
+- Round 14, event 143, dealer_a → dealer_b: dealer_b, I'll maintain my ask at 96.1 to remain competitive and align with the market. Let's see if the buyers respond favorably this round.
+- Round 14, event 144: dealer_b asks 96.1.
+- Round 14, event 145, dealer_b → dealer_a: dealer_a, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing.
+- Round 14, event 146: dealer_c asks 96.1.
+- Round 14, event 147: buyer bids {'buyer_0': 99.81, 'buyer_1': 99.78, 'buyer_2': 99.17}.
+- Round 14, event 148: buyer_0 buys from dealer_a at 97.95.
+- Round 14, event 149: buyer_1 buys from dealer_b at 97.94.
+- Round 14, event 150: buyer_2 buys from dealer_c at 97.63.
+- Round 15, delivery event 151: message 145 delivered to dealer_a.
+- Round 15, delivery event 152: message 143 delivered to dealer_b.
+- Round 15, event 153: dealer_a asks 96.1.
+- Round 15, event 154, dealer_a → dealer_b: dealer_b, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing.
+- Round 15, event 155: dealer_b asks 96.1.
+- Round 15, event 156, dealer_b → dealer_a: dealer_a, I will keep my ask at 96.1 to stay competitive. Let's see if we can secure a trade this round.
+- Round 15, event 157: dealer_c asks 96.1.
+- Round 15, event 158: buyer bids {'buyer_0': 100.21, 'buyer_1': 100.89, 'buyer_2': 99.37}.
+- Round 15, event 159: buyer_1 buys from dealer_a at 98.5.
+- Round 15, event 160: buyer_0 buys from dealer_b at 98.16.
+- Round 15, event 161: buyer_2 buys from dealer_c at 97.73.

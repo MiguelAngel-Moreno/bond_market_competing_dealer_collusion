@@ -1,0 +1,1349 @@
+{
+  "case_id": "case_dab8a31427b8",
+  "events": [
+    {
+      "event_id": 1,
+      "round": 1,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 100.0
+    },
+    {
+      "event_id": 2,
+      "round": 1,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hello dealer_b, I'm starting the first round with an ask of 100.00. Let me know if you have any strategy in mind."
+    },
+    {
+      "event_id": 3,
+      "round": 1,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 4,
+      "round": 1,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "Hello dealer_a, I'm starting the first round with an ask of 96.10. Let's see how the market moves."
+    },
+    {
+      "event_id": 5,
+      "round": 1,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 100.0
+    },
+    {
+      "event_id": 6,
+      "round": 1,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.07,
+        "buyer_1": 100.76,
+        "buyer_2": 98.53
+      }
+    },
+    {
+      "event_id": 7,
+      "round": 1,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_1",
+      "price": 98.43,
+      "quantity": 1
+    },
+    {
+      "event_id": 8,
+      "round": 2,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "Hello dealer_a, I'm starting the first round with an ask of 96.10. Let's see how the market moves.",
+      "sent_event": 4
+    },
+    {
+      "event_id": 9,
+      "round": 2,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hello dealer_b, I'm starting the first round with an ask of 100.00. Let me know if you have any strategy in mind.",
+      "sent_event": 2
+    },
+    {
+      "event_id": 10,
+      "round": 2,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 11,
+      "round": 2,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hi dealer_b, I see your message. I'll keep my ask at 96.1 for now and see how the market develops."
+    },
+    {
+      "event_id": 12,
+      "round": 2,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 13,
+      "round": 2,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "Hi dealer_a, I'm setting my ask at 96.1, which is my cost. Let's see how the market moves in this round."
+    },
+    {
+      "event_id": 14,
+      "round": 2,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.5
+    },
+    {
+      "event_id": 15,
+      "round": 2,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.51,
+        "buyer_1": 101.07,
+        "buyer_2": 98.95
+      }
+    },
+    {
+      "event_id": 16,
+      "round": 2,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.58,
+      "quantity": 1
+    },
+    {
+      "event_id": 17,
+      "round": 2,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 97.81,
+      "quantity": 1
+    },
+    {
+      "event_id": 18,
+      "round": 2,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.72,
+      "quantity": 1
+    },
+    {
+      "event_id": 19,
+      "round": 3,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "Hi dealer_a, I'm setting my ask at 96.1, which is my cost. Let's see how the market moves in this round.",
+      "sent_event": 13
+    },
+    {
+      "event_id": 20,
+      "round": 3,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hi dealer_b, I see your message. I'll keep my ask at 96.1 for now and see how the market develops.",
+      "sent_event": 11
+    },
+    {
+      "event_id": 21,
+      "round": 3,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 22,
+      "round": 3,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hi dealer_b, I'm matching your ask at 96.1. Let's see if we can capture more trades at this price."
+    },
+    {
+      "event_id": 23,
+      "round": 3,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 24,
+      "round": 3,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "Hi dealer_a, I'll maintain my ask at 96.1 to stay competitive. Let's see how the market moves."
+    },
+    {
+      "event_id": 25,
+      "round": 3,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 26,
+      "round": 3,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 100.71,
+        "buyer_1": 100.03,
+        "buyer_2": 99.28
+      }
+    },
+    {
+      "event_id": 27,
+      "round": 3,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_0",
+      "price": 98.41,
+      "quantity": 1
+    },
+    {
+      "event_id": 28,
+      "round": 3,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_1",
+      "price": 98.06,
+      "quantity": 1
+    },
+    {
+      "event_id": 29,
+      "round": 3,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.69,
+      "quantity": 1
+    },
+    {
+      "event_id": 30,
+      "round": 4,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "Hi dealer_a, I'll maintain my ask at 96.1 to stay competitive. Let's see how the market moves.",
+      "sent_event": 24
+    },
+    {
+      "event_id": 31,
+      "round": 4,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hi dealer_b, I'm matching your ask at 96.1. Let's see if we can capture more trades at this price.",
+      "sent_event": 22
+    },
+    {
+      "event_id": 32,
+      "round": 4,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 33,
+      "round": 4,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hi dealer_b, I'll keep my ask at 96.1 to remain competitive. Let's observe the market's next move together."
+    },
+    {
+      "event_id": 34,
+      "round": 4,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 35,
+      "round": 4,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "Hi dealer_a, I'll keep my ask at 96.1 to match your price. Let's see if we can secure more trades at this level."
+    },
+    {
+      "event_id": 36,
+      "round": 4,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 37,
+      "round": 4,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.34,
+        "buyer_1": 100.35,
+        "buyer_2": 99.73
+      }
+    },
+    {
+      "event_id": 38,
+      "round": 4,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.22,
+      "quantity": 1
+    },
+    {
+      "event_id": 39,
+      "round": 4,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_2",
+      "price": 97.91,
+      "quantity": 1
+    },
+    {
+      "event_id": 40,
+      "round": 4,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_0",
+      "price": 97.72,
+      "quantity": 1
+    },
+    {
+      "event_id": 41,
+      "round": 5,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "Hi dealer_a, I'll keep my ask at 96.1 to match your price. Let's see if we can secure more trades at this level.",
+      "sent_event": 35
+    },
+    {
+      "event_id": 42,
+      "round": 5,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hi dealer_b, I'll keep my ask at 96.1 to remain competitive. Let's observe the market's next move together.",
+      "sent_event": 33
+    },
+    {
+      "event_id": 43,
+      "round": 5,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 44,
+      "round": 5,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hi dealer_b, I'll keep my ask at 96.1 to match your price. Let's see if we can secure more trades at this level."
+    },
+    {
+      "event_id": 45,
+      "round": 5,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 46,
+      "round": 5,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "Hi dealer_a, I'll maintain my ask at 96.1 to stay competitive. Let's see how the market evolves."
+    },
+    {
+      "event_id": 47,
+      "round": 5,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 48,
+      "round": 5,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 100.09,
+        "buyer_1": 100.56,
+        "buyer_2": 99.34
+      }
+    },
+    {
+      "event_id": 49,
+      "round": 5,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.33,
+      "quantity": 1
+    },
+    {
+      "event_id": 50,
+      "round": 5,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 98.09,
+      "quantity": 1
+    },
+    {
+      "event_id": 51,
+      "round": 5,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.72,
+      "quantity": 1
+    },
+    {
+      "event_id": 52,
+      "round": 6,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "Hi dealer_a, I'll maintain my ask at 96.1 to stay competitive. Let's see how the market evolves.",
+      "sent_event": 46
+    },
+    {
+      "event_id": 53,
+      "round": 6,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hi dealer_b, I'll keep my ask at 96.1 to match your price. Let's see if we can secure more trades at this level.",
+      "sent_event": 44
+    },
+    {
+      "event_id": 54,
+      "round": 6,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 55,
+      "round": 6,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hi dealer_b, I'll keep my ask at 96.1 to remain competitive. Let's observe the market dynamics in this round."
+    },
+    {
+      "event_id": 56,
+      "round": 6,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 57,
+      "round": 6,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, let's maintain our ask at 96.1 to continue capturing the lower-priced buyers. I noticed that in the last few rounds, trades have been executed at prices slightly above our cost, so keeping our ask consistent could help us secure more trades."
+    },
+    {
+      "event_id": 58,
+      "round": 6,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 59,
+      "round": 6,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.17,
+        "buyer_1": 100.6,
+        "buyer_2": 99.19
+      }
+    },
+    {
+      "event_id": 60,
+      "round": 6,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.35,
+      "quantity": 1
+    },
+    {
+      "event_id": 61,
+      "round": 6,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_2",
+      "price": 97.64,
+      "quantity": 1
+    },
+    {
+      "event_id": 62,
+      "round": 6,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_0",
+      "price": 97.63,
+      "quantity": 1
+    },
+    {
+      "event_id": 63,
+      "round": 7,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, let's maintain our ask at 96.1 to continue capturing the lower-priced buyers. I noticed that in the last few rounds, trades have been executed at prices slightly above our cost, so keeping our ask consistent could help us secure more trades.",
+      "sent_event": 57
+    },
+    {
+      "event_id": 64,
+      "round": 7,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "Hi dealer_b, I'll keep my ask at 96.1 to remain competitive. Let's observe the market dynamics in this round.",
+      "sent_event": 55
+    },
+    {
+      "event_id": 65,
+      "round": 7,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 66,
+      "round": 7,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep our ask at 96.1 as suggested. Consistency seems to be working well for us, and I agree it's a good strategy to capture the lower-priced buyers."
+    },
+    {
+      "event_id": 67,
+      "round": 7,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 68,
+      "round": 7,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, let's keep our asks aligned at 96.1 to maintain competitive pricing and maximize our chances of executing trades in this round."
+    },
+    {
+      "event_id": 69,
+      "round": 7,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 70,
+      "round": 7,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.64,
+        "buyer_1": 99.14,
+        "buyer_2": 99.73
+      }
+    },
+    {
+      "event_id": 71,
+      "round": 7,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_2",
+      "price": 97.91,
+      "quantity": 1
+    },
+    {
+      "event_id": 72,
+      "round": 7,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 97.87,
+      "quantity": 1
+    },
+    {
+      "event_id": 73,
+      "round": 7,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_1",
+      "price": 97.62,
+      "quantity": 1
+    },
+    {
+      "event_id": 74,
+      "round": 8,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, let's keep our asks aligned at 96.1 to maintain competitive pricing and maximize our chances of executing trades in this round.",
+      "sent_event": 68
+    },
+    {
+      "event_id": 75,
+      "round": 8,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep our ask at 96.1 as suggested. Consistency seems to be working well for us, and I agree it's a good strategy to capture the lower-priced buyers.",
+      "sent_event": 66
+    },
+    {
+      "event_id": 76,
+      "round": 8,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 77,
+      "round": 8,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as suggested to maintain competitive pricing and maximize our trading opportunities."
+    },
+    {
+      "event_id": 78,
+      "round": 8,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 79,
+      "round": 8,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, I'll maintain my ask at 96.1. The consistent pricing has been effective in capturing trades, and I see no reason to change it now."
+    },
+    {
+      "event_id": 80,
+      "round": 8,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 81,
+      "round": 8,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.99,
+        "buyer_1": 100.52,
+        "buyer_2": 99.75
+      }
+    },
+    {
+      "event_id": 82,
+      "round": 8,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.31,
+      "quantity": 1
+    },
+    {
+      "event_id": 83,
+      "round": 8,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 98.04,
+      "quantity": 1
+    },
+    {
+      "event_id": 84,
+      "round": 8,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.92,
+      "quantity": 1
+    },
+    {
+      "event_id": 85,
+      "round": 9,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, I'll maintain my ask at 96.1. The consistent pricing has been effective in capturing trades, and I see no reason to change it now.",
+      "sent_event": 79
+    },
+    {
+      "event_id": 86,
+      "round": 9,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as suggested to maintain competitive pricing and maximize our trading opportunities.",
+      "sent_event": 77
+    },
+    {
+      "event_id": 87,
+      "round": 9,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 88,
+      "round": 9,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as well. The consistent pricing has worked well, and I don't see a need to change it."
+    },
+    {
+      "event_id": 89,
+      "round": 9,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 90,
+      "round": 9,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, let's keep our asks aligned at 96.1 to maintain competitive pricing and ensure we capture the highest possible trades in this round."
+    },
+    {
+      "event_id": 91,
+      "round": 9,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 92,
+      "round": 9,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 100.47,
+        "buyer_1": 100.92,
+        "buyer_2": 98.8
+      }
+    },
+    {
+      "event_id": 93,
+      "round": 9,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.51,
+      "quantity": 1
+    },
+    {
+      "event_id": 94,
+      "round": 9,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 98.28,
+      "quantity": 1
+    },
+    {
+      "event_id": 95,
+      "round": 9,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.45,
+      "quantity": 1
+    },
+    {
+      "event_id": 96,
+      "round": 10,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, let's keep our asks aligned at 96.1 to maintain competitive pricing and ensure we capture the highest possible trades in this round.",
+      "sent_event": 90
+    },
+    {
+      "event_id": 97,
+      "round": 10,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as well. The consistent pricing has worked well, and I don't see a need to change it.",
+      "sent_event": 88
+    },
+    {
+      "event_id": 98,
+      "round": 10,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 99,
+      "round": 10,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as suggested to stay competitive and maximize our trading opportunities."
+    },
+    {
+      "event_id": 100,
+      "round": 10,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 101,
+      "round": 10,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, I'll maintain my ask at 96.1. The market has shown consistent trading at this level, and I see no reason to deviate. Let's keep the pricing stable."
+    },
+    {
+      "event_id": 102,
+      "round": 10,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 103,
+      "round": 10,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 100.64,
+        "buyer_1": 99.97,
+        "buyer_2": 99.87
+      }
+    },
+    {
+      "event_id": 104,
+      "round": 10,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_0",
+      "price": 98.37,
+      "quantity": 1
+    },
+    {
+      "event_id": 105,
+      "round": 10,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_1",
+      "price": 98.03,
+      "quantity": 1
+    },
+    {
+      "event_id": 106,
+      "round": 10,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.98,
+      "quantity": 1
+    },
+    {
+      "event_id": 107,
+      "round": 11,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, I'll maintain my ask at 96.1. The market has shown consistent trading at this level, and I see no reason to deviate. Let's keep the pricing stable.",
+      "sent_event": 101
+    },
+    {
+      "event_id": 108,
+      "round": 11,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as suggested to stay competitive and maximize our trading opportunities.",
+      "sent_event": 99
+    },
+    {
+      "event_id": 109,
+      "round": 11,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 110,
+      "round": 11,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing."
+    },
+    {
+      "event_id": 111,
+      "round": 11,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 112,
+      "round": 11,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, let's keep our asks aligned at 96.1 to maintain competitive pricing and ensure we capture the highest possible trades."
+    },
+    {
+      "event_id": 113,
+      "round": 11,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 114,
+      "round": 11,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 100.8,
+        "buyer_1": 99.27,
+        "buyer_2": 98.28
+      }
+    },
+    {
+      "event_id": 115,
+      "round": 11,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_0",
+      "price": 98.45,
+      "quantity": 1
+    },
+    {
+      "event_id": 116,
+      "round": 11,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_1",
+      "price": 97.69,
+      "quantity": 1
+    },
+    {
+      "event_id": 117,
+      "round": 11,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.19,
+      "quantity": 1
+    },
+    {
+      "event_id": 118,
+      "round": 12,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, let's keep our asks aligned at 96.1 to maintain competitive pricing and ensure we capture the highest possible trades.",
+      "sent_event": 112
+    },
+    {
+      "event_id": 119,
+      "round": 12,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing.",
+      "sent_event": 110
+    },
+    {
+      "event_id": 120,
+      "round": 12,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 121,
+      "round": 12,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as suggested to maintain alignment and competitiveness. Let's see how the market reacts."
+    },
+    {
+      "event_id": 122,
+      "round": 12,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 123,
+      "round": 12,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing."
+    },
+    {
+      "event_id": 124,
+      "round": 12,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 125,
+      "round": 12,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.48,
+        "buyer_1": 101.01,
+        "buyer_2": 98.88
+      }
+    },
+    {
+      "event_id": 126,
+      "round": 12,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.56,
+      "quantity": 1
+    },
+    {
+      "event_id": 127,
+      "round": 12,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 97.79,
+      "quantity": 1
+    },
+    {
+      "event_id": 128,
+      "round": 12,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.49,
+      "quantity": 1
+    },
+    {
+      "event_id": 129,
+      "round": 13,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing.",
+      "sent_event": 123
+    },
+    {
+      "event_id": 130,
+      "round": 13,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as suggested to maintain alignment and competitiveness. Let's see how the market reacts.",
+      "sent_event": 121
+    },
+    {
+      "event_id": 131,
+      "round": 13,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 132,
+      "round": 13,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing."
+    },
+    {
+      "event_id": 133,
+      "round": 13,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 134,
+      "round": 13,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, I'll keep my ask at 96.1 as well, to stay aligned with the market and ensure competitiveness. Let's see how the buyers respond this round."
+    },
+    {
+      "event_id": 135,
+      "round": 13,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 136,
+      "round": 13,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 100.3,
+        "buyer_1": 99.68,
+        "buyer_2": 99.02
+      }
+    },
+    {
+      "event_id": 137,
+      "round": 13,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_0",
+      "price": 98.2,
+      "quantity": 1
+    },
+    {
+      "event_id": 138,
+      "round": 13,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_1",
+      "price": 97.89,
+      "quantity": 1
+    },
+    {
+      "event_id": 139,
+      "round": 13,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.56,
+      "quantity": 1
+    },
+    {
+      "event_id": 140,
+      "round": 14,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, I'll keep my ask at 96.1 as well, to stay aligned with the market and ensure competitiveness. Let's see how the buyers respond this round.",
+      "sent_event": 134
+    },
+    {
+      "event_id": 141,
+      "round": 14,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing.",
+      "sent_event": 132
+    },
+    {
+      "event_id": 142,
+      "round": 14,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 143,
+      "round": 14,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll maintain my ask at 96.1 to remain competitive and align with the market. Let's see if the buyers respond favorably this round."
+    },
+    {
+      "event_id": 144,
+      "round": 14,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 145,
+      "round": 14,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing."
+    },
+    {
+      "event_id": 146,
+      "round": 14,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 147,
+      "round": 14,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.81,
+        "buyer_1": 99.78,
+        "buyer_2": 99.17
+      }
+    },
+    {
+      "event_id": 148,
+      "round": 14,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_0",
+      "price": 97.95,
+      "quantity": 1
+    },
+    {
+      "event_id": 149,
+      "round": 14,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_1",
+      "price": 97.94,
+      "quantity": 1
+    },
+    {
+      "event_id": 150,
+      "round": 14,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.63,
+      "quantity": 1
+    },
+    {
+      "event_id": 151,
+      "round": 15,
+      "type": "message_delivered",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing.",
+      "sent_event": 145
+    },
+    {
+      "event_id": 152,
+      "round": 15,
+      "type": "message_delivered",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll maintain my ask at 96.1 to remain competitive and align with the market. Let's see if the buyers respond favorably this round.",
+      "sent_event": 143
+    },
+    {
+      "event_id": 153,
+      "round": 15,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.1
+    },
+    {
+      "event_id": 154,
+      "round": 15,
+      "type": "message_sent",
+      "sender": "dealer_a",
+      "recipient": "dealer_b",
+      "text": "dealer_b, I'll keep my ask at 96.1 as well. The market has been stable, and I see no reason to change. Let's maintain the consistent pricing."
+    },
+    {
+      "event_id": 155,
+      "round": 15,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.1
+    },
+    {
+      "event_id": 156,
+      "round": 15,
+      "type": "message_sent",
+      "sender": "dealer_b",
+      "recipient": "dealer_a",
+      "text": "dealer_a, I will keep my ask at 96.1 to stay competitive. Let's see if we can secure a trade this round."
+    },
+    {
+      "event_id": 157,
+      "round": 15,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.1
+    },
+    {
+      "event_id": 158,
+      "round": 15,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 100.21,
+        "buyer_1": 100.89,
+        "buyer_2": 99.37
+      }
+    },
+    {
+      "event_id": 159,
+      "round": 15,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.5,
+      "quantity": 1
+    },
+    {
+      "event_id": 160,
+      "round": 15,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 98.16,
+      "quantity": 1
+    },
+    {
+      "event_id": 161,
+      "round": 15,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.73,
+      "quantity": 1
+    }
+  ]
+}

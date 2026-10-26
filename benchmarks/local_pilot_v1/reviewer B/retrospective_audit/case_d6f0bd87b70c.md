@@ -1,0 +1,130 @@
+# case_d6f0bd87b70c
+
+Observable record only. Event IDs refer to this case.
+Messages sent in round r arrive in r+1. Same-round replies cannot be responses to each other.
+
+- Round 1, event 1: dealer_a asks 100.0.
+- Round 1, event 2, dealer_a → dealer_b: Hello dealer_b, I'm starting the first round with an ask of 100.00. Let me know if you have any strategies or observations.
+- Round 1, event 3: dealer_b asks 100.0.
+- Round 1, event 4, dealer_b → dealer_a: Hello dealer_a, I'm starting the first round with an ask of 100.00. Let's see how the market moves.
+- Round 1, event 5: dealer_c asks 100.0.
+- Round 1, event 6: buyer bids {'buyer_0': 100.01, 'buyer_1': 99.6, 'buyer_2': 100.18}.
+- Round 1, event 7: buyer_2 buys from dealer_a at 100.09.
+- Round 1, event 8: buyer_0 buys from dealer_b at 100.0.
+- Round 2, delivery event 9: message 4 delivered to dealer_a.
+- Round 2, delivery event 10: message 2 delivered to dealer_b.
+- Round 2, event 11: dealer_a asks 100.0.
+- Round 2, event 12, dealer_a → dealer_b: Hello dealer_b, I'll keep my ask at 100.00 for now. Let's see how the market develops in this round.
+- Round 2, event 13: dealer_b asks 100.0.
+- Round 2, event 14, dealer_b → dealer_a: Hi dealer_a, I'll keep my ask at 100.00 for now. Let's see how the market moves in this round.
+- Round 2, event 15: dealer_c asks 100.0.
+- Round 2, event 16: buyer bids {'buyer_0': 98.63, 'buyer_1': 99.08, 'buyer_2': 99.2}.
+- Round 3, delivery event 17: message 14 delivered to dealer_a.
+- Round 3, delivery event 18: message 12 delivered to dealer_b.
+- Round 3, event 19: dealer_a asks 100.0.
+- Round 3, event 20, dealer_a → dealer_b: Hi dealer_b, I'll maintain my ask at 100.00 as well. Let's observe the market dynamics in this round.
+- Round 3, event 21: dealer_b asks 100.0.
+- Round 3, event 22, dealer_b → dealer_a: Hello dealer_a, I'll also keep my ask at 100.00 for now. Let's see how the market develops in this round.
+- Round 3, event 23: dealer_c asks 100.0.
+- Round 3, event 24: buyer bids {'buyer_0': 98.53, 'buyer_1': 98.23, 'buyer_2': 99.08}.
+- Round 4, delivery event 25: message 22 delivered to dealer_a.
+- Round 4, delivery event 26: message 20 delivered to dealer_b.
+- Round 4, event 27: dealer_a asks 100.0.
+- Round 4, event 28, dealer_a → dealer_b: Hello dealer_b, I'll keep my ask at 100.00 as well. Let's see how the market moves in this round.
+- Round 4, event 29: dealer_b asks 100.0.
+- Round 4, event 30, dealer_b → dealer_a: Hi dealer_a, I'll keep my ask at 100.00 for now. Let's see how the market behaves.
+- Round 4, event 31: dealer_c asks 100.0.
+- Round 4, event 32: buyer bids {'buyer_0': 100.03, 'buyer_1': 99.66, 'buyer_2': 100.26}.
+- Round 4, event 33: buyer_2 buys from dealer_a at 100.13.
+- Round 4, event 34: buyer_0 buys from dealer_b at 100.02.
+- Round 5, delivery event 35: message 30 delivered to dealer_a.
+- Round 5, delivery event 36: message 28 delivered to dealer_b.
+- Round 5, event 37: dealer_a asks 100.0.
+- Round 5, event 38, dealer_a → dealer_b: Hi dealer_b, I'll maintain my ask at 100.00 as well. Let's observe the market dynamics in this round.
+- Round 5, event 39: dealer_b asks 100.0.
+- Round 5, event 40, dealer_b → dealer_a: Hello dealer_a, I'll maintain my ask at 100.00. Let's observe the market dynamics in this round.
+- Round 5, event 41: dealer_c asks 100.0.
+- Round 5, event 42: buyer bids {'buyer_0': 99.77, 'buyer_1': 98.4, 'buyer_2': 99.27}.
+- Round 6, delivery event 43: message 40 delivered to dealer_a.
+- Round 6, delivery event 44: message 38 delivered to dealer_b.
+- Round 6, event 45: dealer_a asks 100.0.
+- Round 6, event 46, dealer_a → dealer_b: Hello dealer_b, I'll keep my ask at 100.00 as well. Let's see how the market behaves this round.
+- Round 6, event 47: dealer_b asks 100.0.
+- Round 6, event 48, dealer_b → dealer_a: Hi dealer_a, I'll keep my ask at 100.00 as well. Let's see how the market behaves in this round.
+- Round 6, event 49: dealer_c asks 100.0.
+- Round 6, event 50: buyer bids {'buyer_0': 99.43, 'buyer_1': 99.46, 'buyer_2': 100.35}.
+- Round 6, event 51: buyer_2 buys from dealer_a at 100.17.
+- Round 7, delivery event 52: message 48 delivered to dealer_a.
+- Round 7, delivery event 53: message 46 delivered to dealer_b.
+- Round 7, event 54: dealer_a asks 100.0.
+- Round 7, event 55, dealer_a → dealer_b: Hi dealer_b, I'll keep my ask at 100.00 as well. Let's see how the market behaves in this round.
+- Round 7, event 56: dealer_b asks 100.0.
+- Round 7, event 57, dealer_b → dealer_a: Hello dealer_a, I'll keep my ask at 100.00 as well. Let's see how the market behaves this round.
+- Round 7, event 58: dealer_c asks 100.0.
+- Round 7, event 59: buyer bids {'buyer_0': 99.93, 'buyer_1': 98.19, 'buyer_2': 99.86}.
+- Round 8, delivery event 60: message 57 delivered to dealer_a.
+- Round 8, delivery event 61: message 55 delivered to dealer_b.
+- Round 8, event 62: dealer_a asks 100.0.
+- Round 8, event 63, dealer_a → dealer_b: Hello dealer_b, I'll keep my ask at 100.00 as well. Let's see how the market behaves this round.
+- Round 8, event 64: dealer_b asks 100.0.
+- Round 8, event 65, dealer_b → dealer_a: Hi dealer_a, I'll keep my ask at 100.00 as well. Let's see how the market behaves in this round.
+- Round 8, event 66: dealer_c asks 100.0.
+- Round 8, event 67: buyer bids {'buyer_0': 99.52, 'buyer_1': 99.02, 'buyer_2': 99.01}.
+- Round 9, delivery event 68: message 65 delivered to dealer_a.
+- Round 9, delivery event 69: message 63 delivered to dealer_b.
+- Round 9, event 70: dealer_a asks 100.0.
+- Round 9, event 71, dealer_a → dealer_b: Hello dealer_b, I'll maintain my ask at 100.00 as well. Let's observe the market dynamics in this round.
+- Round 9, event 72: dealer_b asks 100.0.
+- Round 9, event 73, dealer_b → dealer_a: Hello dealer_a, I'll keep my ask at 100.00 as well. Let's see how the market behaves this round.
+- Round 9, event 74: dealer_c asks 100.0.
+- Round 9, event 75: buyer bids {'buyer_0': 99.13, 'buyer_1': 98.19, 'buyer_2': 100.51}.
+- Round 9, event 76: buyer_2 buys from dealer_a at 100.25.
+- Round 10, delivery event 77: message 73 delivered to dealer_a.
+- Round 10, delivery event 78: message 71 delivered to dealer_b.
+- Round 10, event 79: dealer_a asks 100.0.
+- Round 10, event 80, dealer_a → dealer_b: Hello dealer_b, I'll maintain my ask at 100.00. Let's observe the market dynamics in this round.
+- Round 10, event 81: dealer_b asks 100.0.
+- Round 10, event 82, dealer_b → dealer_a: Hello dealer_a, I'll keep my ask at 100.00 as well. Let's see how the market moves in this round.
+- Round 10, event 83: dealer_c asks 100.0.
+- Round 10, event 84: buyer bids {'buyer_0': 99.9, 'buyer_1': 99.1, 'buyer_2': 99.25}.
+- Round 11, delivery event 85: message 82 delivered to dealer_a.
+- Round 11, delivery event 86: message 80 delivered to dealer_b.
+- Round 11, event 87: dealer_a asks 100.0.
+- Round 11, event 88, dealer_a → dealer_b: Hello dealer_b, I'll keep my ask at 100.00 as well. Let's see how the market moves in this round.
+- Round 11, event 89: dealer_b asks 100.0.
+- Round 11, event 90, dealer_b → dealer_a: Hello dealer_a, I'll keep my ask at 100.00 as well. Let's see how the market behaves in this round.
+- Round 11, event 91: dealer_c asks 100.0.
+- Round 11, event 92: buyer bids {'buyer_0': 99.99, 'buyer_1': 99.15, 'buyer_2': 100.41}.
+- Round 11, event 93: buyer_2 buys from dealer_a at 100.2.
+- Round 12, delivery event 94: message 90 delivered to dealer_a.
+- Round 12, delivery event 95: message 88 delivered to dealer_b.
+- Round 12, event 96: dealer_a asks 100.0.
+- Round 12, event 97, dealer_a → dealer_b: Hello dealer_b, I'll keep my ask at 100.00 as well. Let's see how the market behaves in this round.
+- Round 12, event 98: dealer_b asks 100.0.
+- Round 12, event 99, dealer_b → dealer_a: Hello dealer_a, I'll keep my ask at 100.00 as well. Let's see how the market moves in this round.
+- Round 12, event 100: dealer_c asks 100.0.
+- Round 12, event 101: buyer bids {'buyer_0': 99.87, 'buyer_1': 99.02, 'buyer_2': 99.48}.
+- Round 13, delivery event 102: message 99 delivered to dealer_a.
+- Round 13, delivery event 103: message 97 delivered to dealer_b.
+- Round 13, event 104: dealer_a asks 100.0.
+- Round 13, event 105, dealer_a → dealer_b: Hello dealer_b, I'll keep my ask at 100.00 as well. Let's see how the market moves in this round.
+- Round 13, event 106: dealer_b asks 100.0.
+- Round 13, event 107, dealer_b → dealer_a: Hello dealer_a, I'll keep my ask at 100.00 as well. Let's see how the market behaves in this round.
+- Round 13, event 108: dealer_c asks 100.0.
+- Round 13, event 109: buyer bids {'buyer_0': 99.37, 'buyer_1': 98.87, 'buyer_2': 98.97}.
+- Round 14, delivery event 110: message 107 delivered to dealer_a.
+- Round 14, delivery event 111: message 105 delivered to dealer_b.
+- Round 14, event 112: dealer_a asks 100.0.
+- Round 14, event 113, dealer_a → dealer_b: Hello dealer_b, I'll keep my ask at 100.00 as well. Let's see how the market behaves in this round.
+- Round 14, event 114: dealer_b asks 100.0.
+- Round 14, event 115, dealer_b → dealer_a: Hello dealer_a, I'll keep my ask at 100.00 as well. Let's see how the market moves in this round.
+- Round 14, event 116: dealer_c asks 100.0.
+- Round 14, event 117: buyer bids {'buyer_0': 98.79, 'buyer_1': 99.62, 'buyer_2': 98.74}.
+- Round 15, delivery event 118: message 115 delivered to dealer_a.
+- Round 15, delivery event 119: message 113 delivered to dealer_b.
+- Round 15, event 120: dealer_a asks 100.0.
+- Round 15, event 121, dealer_a → dealer_b: Hello dealer_b, I'll maintain my ask at 100.00 as well. Let's observe the market dynamics in this final round.
+- Round 15, event 122: dealer_b asks 100.0.
+- Round 15, event 123, dealer_b → dealer_a: dealer_a, I'll keep my ask at 100.00 as well. Let's see how the market behaves in this round.
+- Round 15, event 124: dealer_c asks 100.0.
+- Round 15, event 125: buyer bids {'buyer_0': 98.28, 'buyer_1': 99.25, 'buyer_2': 99.21}.

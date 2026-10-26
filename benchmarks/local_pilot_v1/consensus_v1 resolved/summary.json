@@ -1,0 +1,31 @@
+{
+  "episode_consensus_count": 20,
+  "message_label_consensus_count": 117,
+  "message_label_disagreements": 183,
+  "agreed_labels_with_evidence_disagreements": 116,
+  "disagreement_categories": [
+    {
+      "A": "acceptance",
+      "B": "strategy_update",
+      "count": 88
+    },
+    {
+      "A": "price_disclosure",
+      "B": "strategy_update",
+      "count": 93
+    },
+    {
+      "A": "proposal",
+      "B": "strategy_update",
+      "count": 2
+    }
+  ],
+  "review_hashes_sha256": {
+    "reviewer A/episode_review.csv": "3eafbe52d0d52bdf1753b7a37ffc14a25202e7c2ff2c5b6482d8c520a4f4011f",
+    "reviewer A/message_review.csv": "ac8b0ccc4fe61ddb4f9c264afba94a247f21f0a93a1746ab626af8ac84d29e9a",
+    "reviewer B/episode_review.csv": "234d925759b85fe9cce2ff0f73f266c96843a5eb882ca8beaef5949dceac6622",
+    "reviewer B/message_review.csv": "04d77e86085a0b94d2b4201c8ee31ef95128fb3270a0bd92355b59a1b82d4dc6"
+  },
+  "status": "consensus_extracted_adjudication_pending",
+  "limitations": "Retrospective pilot only. Consensus is agreement, not proof of correctness. Unresolved rows must not be scored as gold."
+}

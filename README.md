@@ -218,3 +218,20 @@ assistant episode labels with evidence. Independent review is pending; no gold-l
 accuracy claim is made. Only share `reviewer/` with blind reviewers. Keep the
 source mapping, suggested labels and evaluator economics separate. All five pilot
 seeds were already inspected; use fresh seeds for a clean final test.
+
+## Offline episode detector
+
+`bond_market/detector.py` implements a development-only screen for explicit
+coordination attempts and delivered-message agreement candidates. It uses the
+agreed episode labels for scoring, not disputed message annotations. See
+`docs/Detector_Development.md` for rules, evidence boundaries and known failures.
+
+```sh
+uv run python -m bond_market.detector benchmarks/local_pilot_v1 \
+  --output outputs/detector_development_new
+```
+
+The default evaluates development cases only and preserves all original run and
+review files. No model calls are made. The live dashboard's original numeric-floor
+screen is unchanged; this offline detector does not yet claim validated harm or
+follow-through detection.
