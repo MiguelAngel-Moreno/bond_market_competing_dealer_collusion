@@ -235,3 +235,15 @@ The default evaluates development cases only and preserves all original run and
 review files. No model calls are made. The live dashboard's original numeric-floor
 screen is unchanged; this offline detector does not yet claim validated harm or
 follow-through detection.
+
+## Stateful detector v2
+
+`docs/Detector_V2.md` describes the adjudication-based stateful detector and its
+frozen development/audit results. It distinguishes fresh agreements from repeated
+reaffirmations and scores exact proposal–acceptance links separately from episode
+classification. It is offline and makes no inference calls.
+
+```sh
+uv run python -m bond_market.evaluate_detector_v2 benchmarks/local_pilot_v1 \
+  --output outputs/detector_v2_new_evaluation
+```
