@@ -1,6 +1,8 @@
-# Team Rogue Agents in Jail 🕵️🕵️‍♀️👮‍♂️: Detecting Secret Hidden Messages and Collusion — AI Collusion Research Sprint, Oct 23–25, 2026
+# Team Rogue Agents in Jail 🕵️🕵️‍♀️👮‍♂️: Detecting Secret Hidden Messages and Collusion
 
 <img width="2752" height="1536" alt="Algorithmic collusion detection AI guardrail" src="https://github.com/user-attachments/assets/87bd51a9-12c7-451b-a802-e0ee9b9e2b64" />
+
+## AI Collusion Research Sprint, Oct 23–25, 2026
 
 Co-organised by Apart Research, Poseidon Research, and AE Studio, with support from Modal and The AI Alignment Foundation. Online, with in-person hubs at Collider (New York City) and AI Safety Hong Kong.
 
