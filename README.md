@@ -1,3 +1,23 @@
+# Making AI Guardrails Understandable and Testable: A Framework Illustrated by a Simulated Bond Market
+
+In order to advance AI safety research into shaping public policy, the development of technical controls needs to have a clear purpose, evidence, and limitations that are understandable for the people responsible for using and overseeing them. We propose a practical framework to connect a specific risk and realistic failure mechanism to a guardrail, an evaluation, and a decision that shows a duty of care. 
+
+Our intention is to contribute a reusable method for researchers, enterprises, governments, and regulators to review the same safety solution at differing levels of technical detail. We develop an illustrative framework via a simplified bond-market simulation wherein dealer agents have different incentives and opportunities to communicate that may lead collusion to occur. Rather than focusing on what the agents say they are doing and trusting that, we focus on their messages, actions and decisions to determine to if detection methods can show where their behaviours show that we should not trust them. 
+
+In the real world, multiple parameters must be considered to accurately model quantitative detection of collusion and some asset classes are far more complex. Collusion is not reflected directly via price only but in volume, bid-ask spread, and timing. We use the bond markets as they are complex to focus on key factors with simplification to focus on how guardrails can be built to monitor collusive intent, which must be distinguished from convergence on the same goal. 
+
+We used AI-assisted trade validation and dataset preparation to run randomized simulations of 4 different scenarios to determine if we can detect the intent to collude. By giving the same records to two isolated LLM reviewers, that accept matching labels for testing and validation, we can identify unusual patterns that can be escalated to a Human-in-the-Loop reviewer. We also built a separate internal activation detector for future work to explore the option of using this novel evaluation method in open source models that enterprises may deploy in a private deployment. 
+
+To ensure our detection method actually works, we used matched randomization to run our "collusion" example against a nearly identify "no collusion" example to isolate the differences we would like to detect in repeated episodes. We then used independent agents label the data without seeing each other's answers so that we could trust the labels. We reserved some test cases that were hidden until the end to check the method and validate it. 
+
+We generate a detector that is useful in catching collusion at a rate that allows the people who need to use this (a compliance officer, internal auditor, regulator) can intervene to prevent harm and a person responsible for oversight (manager, external auditor, board director) can understand how it is used to identify and flag risks, without a data scientist standing over their shoulder. 
+
+The method is particularly relevant or a wide range of guardrails in the real-world, where statutory laws and regulations already exist and firms may adopt a guardrail to prevent harm but have no meaningful method to actual detect if a guardrail may have been circumvented. 
+
+For example, a guardrail may be employed to prevent discriminatory bias in a dataset, however agents may adapt their communication to employ stenography by using word choices that secretly bypass the guardrail. This paper offers a worked method to connect technical safety research to oversight decisions, that enterprises are already required to adopt.
+
+https://apartresearch.com/sprints/projects/making-ai-guardrails-understandable-and-testable-a-framework-illustrated-by-a-simulated-bond-market-spgz
+
 # Bond market competing dealer collusion
 
 A standalone adaptation of `../collusion_hackathon/llm-agent-collusion`, for studying price coordination between synthetic bond dealers. This is a runnable experimental starting point, not a production bond market or validated collusion detector.
