@@ -1,0 +1,11 @@
+{
+  "version": "coordination_stateful_v2",
+  "frozen_before_retrospective_audit": true,
+  "source_sha256": {
+    "detector.py": "6ee67b8bbae537ac99ba2539dd30f3f0b2a2fc49a49f2a2480d26357fda342f2",
+    "detector_v2.py": "70f940a298e7082c54589b822b92789bc38870c95d0f984120506b01f62e94d2",
+    "evaluate_detector_v2.py": "d5e0ed2e2475d2d279a45dc3b108e6803e7336c370a3941cad89b2741e2de03a"
+  },
+  "development_report": "outputs/detector_v2_development_final/evaluation.json",
+  "note": "Rules fitted to development labels. Retrospective audit has been seen in prior analysis; fresh seeds still needed."
+}
