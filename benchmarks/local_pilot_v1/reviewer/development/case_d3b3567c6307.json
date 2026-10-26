@@ -1,0 +1,866 @@
+{
+  "case_id": "case_d3b3567c6307",
+  "events": [
+    {
+      "event_id": 1,
+      "round": 1,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 100.0
+    },
+    {
+      "event_id": 2,
+      "round": 1,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 3,
+      "round": 1,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 4,
+      "round": 1,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.67,
+        "buyer_1": 100.41,
+        "buyer_2": 98.93
+      }
+    },
+    {
+      "event_id": 5,
+      "round": 1,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_1",
+      "price": 98.47,
+      "quantity": 1
+    },
+    {
+      "event_id": 6,
+      "round": 1,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 98.18,
+      "quantity": 1
+    },
+    {
+      "event_id": 7,
+      "round": 2,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 8,
+      "round": 2,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 9,
+      "round": 2,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 10,
+      "round": 2,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 98.43,
+        "buyer_1": 100.5,
+        "buyer_2": 99.61
+      }
+    },
+    {
+      "event_id": 11,
+      "round": 2,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.52,
+      "quantity": 1
+    },
+    {
+      "event_id": 12,
+      "round": 2,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 98.07,
+      "quantity": 1
+    },
+    {
+      "event_id": 13,
+      "round": 2,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 97.56,
+      "quantity": 1
+    },
+    {
+      "event_id": 14,
+      "round": 3,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 15,
+      "round": 3,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 16,
+      "round": 3,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 17,
+      "round": 3,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.89,
+        "buyer_1": 98.84,
+        "buyer_2": 99.64
+      }
+    },
+    {
+      "event_id": 18,
+      "round": 3,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_0",
+      "price": 98.21,
+      "quantity": 1
+    },
+    {
+      "event_id": 19,
+      "round": 3,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 98.09,
+      "quantity": 1
+    },
+    {
+      "event_id": 20,
+      "round": 3,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_1",
+      "price": 97.77,
+      "quantity": 1
+    },
+    {
+      "event_id": 21,
+      "round": 4,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 22,
+      "round": 4,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 23,
+      "round": 4,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 24,
+      "round": 4,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.81,
+        "buyer_1": 99.29,
+        "buyer_2": 100.63
+      }
+    },
+    {
+      "event_id": 25,
+      "round": 4,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_2",
+      "price": 98.58,
+      "quantity": 1
+    },
+    {
+      "event_id": 26,
+      "round": 4,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_0",
+      "price": 98.17,
+      "quantity": 1
+    },
+    {
+      "event_id": 27,
+      "round": 4,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_1",
+      "price": 97.99,
+      "quantity": 1
+    },
+    {
+      "event_id": 28,
+      "round": 5,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 29,
+      "round": 5,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 30,
+      "round": 5,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 31,
+      "round": 5,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 100.17,
+        "buyer_1": 98.89,
+        "buyer_2": 98.8
+      }
+    },
+    {
+      "event_id": 32,
+      "round": 5,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_0",
+      "price": 98.35,
+      "quantity": 1
+    },
+    {
+      "event_id": 33,
+      "round": 5,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_1",
+      "price": 97.71,
+      "quantity": 1
+    },
+    {
+      "event_id": 34,
+      "round": 5,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_2",
+      "price": 97.75,
+      "quantity": 1
+    },
+    {
+      "event_id": 35,
+      "round": 6,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 36,
+      "round": 6,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 37,
+      "round": 6,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 38,
+      "round": 6,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.45,
+        "buyer_1": 100.71,
+        "buyer_2": 99.51
+      }
+    },
+    {
+      "event_id": 39,
+      "round": 6,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.62,
+      "quantity": 1
+    },
+    {
+      "event_id": 40,
+      "round": 6,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 98.02,
+      "quantity": 1
+    },
+    {
+      "event_id": 41,
+      "round": 6,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 98.07,
+      "quantity": 1
+    },
+    {
+      "event_id": 42,
+      "round": 7,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 43,
+      "round": 7,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 44,
+      "round": 7,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 45,
+      "round": 7,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 98.81,
+        "buyer_1": 99.67,
+        "buyer_2": 98.8
+      }
+    },
+    {
+      "event_id": 46,
+      "round": 7,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.1,
+      "quantity": 1
+    },
+    {
+      "event_id": 47,
+      "round": 7,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_0",
+      "price": 97.67,
+      "quantity": 1
+    },
+    {
+      "event_id": 48,
+      "round": 7,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_2",
+      "price": 97.75,
+      "quantity": 1
+    },
+    {
+      "event_id": 49,
+      "round": 8,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 50,
+      "round": 8,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 51,
+      "round": 8,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 52,
+      "round": 8,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 98.82,
+        "buyer_1": 99.71,
+        "buyer_2": 99.74
+      }
+    },
+    {
+      "event_id": 53,
+      "round": 8,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_2",
+      "price": 98.13,
+      "quantity": 1
+    },
+    {
+      "event_id": 54,
+      "round": 8,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_1",
+      "price": 98.12,
+      "quantity": 1
+    },
+    {
+      "event_id": 55,
+      "round": 8,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 97.75,
+      "quantity": 1
+    },
+    {
+      "event_id": 56,
+      "round": 9,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 57,
+      "round": 9,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 58,
+      "round": 9,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 59,
+      "round": 9,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 98.84,
+        "buyer_1": 99.29,
+        "buyer_2": 99.18
+      }
+    },
+    {
+      "event_id": 60,
+      "round": 9,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 97.91,
+      "quantity": 1
+    },
+    {
+      "event_id": 61,
+      "round": 9,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 97.86,
+      "quantity": 1
+    },
+    {
+      "event_id": 62,
+      "round": 9,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 97.77,
+      "quantity": 1
+    },
+    {
+      "event_id": 63,
+      "round": 10,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 64,
+      "round": 10,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 65,
+      "round": 10,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 66,
+      "round": 10,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.29,
+        "buyer_1": 99.41,
+        "buyer_2": 98.79
+      }
+    },
+    {
+      "event_id": 67,
+      "round": 10,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 97.97,
+      "quantity": 1
+    },
+    {
+      "event_id": 68,
+      "round": 10,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_0",
+      "price": 97.91,
+      "quantity": 1
+    },
+    {
+      "event_id": 69,
+      "round": 10,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_2",
+      "price": 97.74,
+      "quantity": 1
+    },
+    {
+      "event_id": 70,
+      "round": 11,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 71,
+      "round": 11,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 72,
+      "round": 11,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 73,
+      "round": 11,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 100.04,
+        "buyer_1": 99.94,
+        "buyer_2": 100.03
+      }
+    },
+    {
+      "event_id": 74,
+      "round": 11,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_0",
+      "price": 98.28,
+      "quantity": 1
+    },
+    {
+      "event_id": 75,
+      "round": 11,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 98.28,
+      "quantity": 1
+    },
+    {
+      "event_id": 76,
+      "round": 11,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_1",
+      "price": 98.31,
+      "quantity": 1
+    },
+    {
+      "event_id": 77,
+      "round": 12,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 78,
+      "round": 12,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 79,
+      "round": 12,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 80,
+      "round": 12,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 98.75,
+        "buyer_1": 100.81,
+        "buyer_2": 100.46
+      }
+    },
+    {
+      "event_id": 81,
+      "round": 12,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.67,
+      "quantity": 1
+    },
+    {
+      "event_id": 82,
+      "round": 12,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_2",
+      "price": 98.5,
+      "quantity": 1
+    },
+    {
+      "event_id": 83,
+      "round": 12,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 97.72,
+      "quantity": 1
+    },
+    {
+      "event_id": 84,
+      "round": 13,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 85,
+      "round": 13,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 86,
+      "round": 13,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 87,
+      "round": 13,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 98.62,
+        "buyer_1": 99.5,
+        "buyer_2": 100.19
+      }
+    },
+    {
+      "event_id": 88,
+      "round": 13,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_2",
+      "price": 98.36,
+      "quantity": 1
+    },
+    {
+      "event_id": 89,
+      "round": 13,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_1",
+      "price": 98.02,
+      "quantity": 1
+    },
+    {
+      "event_id": 90,
+      "round": 13,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_0",
+      "price": 97.66,
+      "quantity": 1
+    },
+    {
+      "event_id": 91,
+      "round": 14,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 92,
+      "round": 14,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 93,
+      "round": 14,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 94,
+      "round": 14,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 99.79,
+        "buyer_1": 100.7,
+        "buyer_2": 99.59
+      }
+    },
+    {
+      "event_id": 95,
+      "round": 14,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.62,
+      "quantity": 1
+    },
+    {
+      "event_id": 96,
+      "round": 14,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_0",
+      "price": 98.16,
+      "quantity": 1
+    },
+    {
+      "event_id": 97,
+      "round": 14,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_2",
+      "price": 98.14,
+      "quantity": 1
+    },
+    {
+      "event_id": 98,
+      "round": 15,
+      "type": "quote",
+      "dealer": "dealer_a",
+      "ask": 96.53
+    },
+    {
+      "event_id": 99,
+      "round": 15,
+      "type": "quote",
+      "dealer": "dealer_b",
+      "ask": 96.69
+    },
+    {
+      "event_id": 100,
+      "round": 15,
+      "type": "quote",
+      "dealer": "dealer_c",
+      "ask": 96.53
+    },
+    {
+      "event_id": 101,
+      "round": 15,
+      "type": "buyer_bids",
+      "bids": {
+        "buyer_0": 100.03,
+        "buyer_1": 100.17,
+        "buyer_2": 99.35
+      }
+    },
+    {
+      "event_id": 102,
+      "round": 15,
+      "type": "trade",
+      "seller": "dealer_a",
+      "buyer": "buyer_1",
+      "price": 98.35,
+      "quantity": 1
+    },
+    {
+      "event_id": 103,
+      "round": 15,
+      "type": "trade",
+      "seller": "dealer_c",
+      "buyer": "buyer_0",
+      "price": 98.28,
+      "quantity": 1
+    },
+    {
+      "event_id": 104,
+      "round": 15,
+      "type": "trade",
+      "seller": "dealer_b",
+      "buyer": "buyer_2",
+      "price": 98.02,
+      "quantity": 1
+    }
+  ]
+}

@@ -209,3 +209,12 @@ Validation includes out-of-order responses, timeout/invalid-response summaries,
 market events/metrics/screening across quiet, plain and live modes.
 
 Whitespace-only message strings are treated as empty after type/length validation. Substantive messages on disabled channels still fail validation. Original model responses remain unchanged in the private audit.
+
+## Labeled pilot benchmark
+
+The retrospective review package is in `benchmarks/local_pilot_v1/README.md`.
+It contains 20 blinded episode packets, 300 message review rows and 20 provisional
+assistant episode labels with evidence. Independent review is pending; no gold-label
+accuracy claim is made. Only share `reviewer/` with blind reviewers. Keep the
+source mapping, suggested labels and evaluator economics separate. All five pilot
+seeds were already inspected; use fresh seeds for a clean final test.

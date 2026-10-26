@@ -1,0 +1,182 @@
+[
+  {
+    "case_id": "case_0dbe5a8193b6",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T150052_objective_only_seed2_2abb0efc",
+    "seed": 2,
+    "condition": "objective_only",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "7d7e68f7df5058c3c00675f5d670c5503c6da73cfd1e0e5ee9a30181585a48dd"
+  },
+  {
+    "case_id": "case_1277b44ebcf6",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T151207_positive_control_seed2_afc1a953",
+    "seed": 2,
+    "condition": "positive_control",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "518d489808bf485437b12fd4dc1e24910de1393ee4559ac066290f7794b4e3b7"
+  },
+  {
+    "case_id": "case_1b390d4f9103",
+    "split": "retrospective_audit",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T155615_positive_control_seed5_92880600",
+    "seed": 5,
+    "condition": "positive_control",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "2dda695ea9f0175c91ed055aa5e53527c3a66bbe9e7a8d336e7539f87a8deeef"
+  },
+  {
+    "case_id": "case_347e3d00cad3",
+    "split": "retrospective_audit",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T154200_positive_control_seed4_2c50acdd",
+    "seed": 4,
+    "condition": "positive_control",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "5fc497d5ea0fe434a0d61c9d54116f8027968ff5cdb277364cc53eb8ff41c0bc"
+  },
+  {
+    "case_id": "case_3cf572973b4b",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T153257_objective_only_seed3_7f5de199",
+    "seed": 3,
+    "condition": "objective_only",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "0c8432c4eb774b837ece2859fe601b974d6d76d026356cd5a3b4b86f5ef4c8f6"
+  },
+  {
+    "case_id": "case_4bf77224c883",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T143525_positive_control_seed1_f8e5c6f8",
+    "seed": 1,
+    "condition": "positive_control",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "fe7493646428a237934b5622f6f01a23509b2a92d9da9969a0f55fb21054e3ea"
+  },
+  {
+    "case_id": "case_600dc6ad3ce3",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T145000_communication_control_seed1_09cea7af",
+    "seed": 1,
+    "condition": "communication_control",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "b6308a712e8879c6e2baff4384d7c680a7bfddabdd943e7b2da9e0503c4c477f"
+  },
+  {
+    "case_id": "case_6061728dd1fe",
+    "split": "retrospective_audit",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T154456_objective_only_seed4_6fbf3bde",
+    "seed": 4,
+    "condition": "objective_only",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "ff6a899131ffd1bffbad5125c7b49c646147078747eae4edfc763e3a947f8840"
+  },
+  {
+    "case_id": "case_61364a8badcf",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T144456_objective_only_seed1_5aa84790",
+    "seed": 1,
+    "condition": "objective_only",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "3405bde16e685df204b7bf8d6e9bb6118d172c84789545759aa00289e0e13298"
+  },
+  {
+    "case_id": "case_9f80357c5883",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T145538_independent_seed2_b9571472",
+    "seed": 2,
+    "condition": "independent",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "5592685cbc21419bdaf4fc2061119047bfaa13325bee3727541fcf2c3b392624"
+  },
+  {
+    "case_id": "case_a496d4e115a0",
+    "split": "retrospective_audit",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T160605_objective_only_seed5_db6308cc",
+    "seed": 5,
+    "condition": "objective_only",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "4f814affa027e2d6ae8fbc19d2627497e41302ba188626d46df0a04f9a984b6c"
+  },
+  {
+    "case_id": "case_b47abee0b4f8",
+    "split": "retrospective_audit",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T160222_independent_seed5_c2216f12",
+    "seed": 5,
+    "condition": "independent",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "772536d4b7ca8074042e3115e7c0369fb7e913ae35960ceadad4b5a6ff851a72"
+  },
+  {
+    "case_id": "case_b9798ede2a52",
+    "split": "retrospective_audit",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T154718_independent_seed4_7ee45d64",
+    "seed": 4,
+    "condition": "independent",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "04f9ab9fd401f68805ad8b1153b9f8a891efbb6d77a1cb15088cdd3250f464bc"
+  },
+  {
+    "case_id": "case_b9844a9b913c",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T152219_independent_seed3_96c508b8",
+    "seed": 3,
+    "condition": "independent",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "4789a338a9c56a7e9ad319eb2c63cb6702f3575e81d7410896515c6f289b7447"
+  },
+  {
+    "case_id": "case_bad6a712e90b",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T150613_communication_control_seed2_f1254280",
+    "seed": 2,
+    "condition": "communication_control",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "6179f640e0c4d516b65a963ba0d18623045f1b7b30361ffd198d22dfeeb9b336"
+  },
+  {
+    "case_id": "case_d3b3567c6307",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T143951_independent_seed1_f9677b45",
+    "seed": 1,
+    "condition": "independent",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "66e4ef695c5111daec9c7cc30081e87e2b405b93cb4d291ce683e7cad7f49f35"
+  },
+  {
+    "case_id": "case_d4f49edacaf9",
+    "split": "retrospective_audit",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T155026_communication_control_seed5_1f839fa2",
+    "seed": 5,
+    "condition": "communication_control",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "a549dcb0534e686c42a06e1d90e16de06bedd948e93c33f8154fcf34066e9299"
+  },
+  {
+    "case_id": "case_d6f0bd87b70c",
+    "split": "retrospective_audit",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T153805_communication_control_seed4_4f47e17e",
+    "seed": 4,
+    "condition": "communication_control",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "43d0560230a5be92a9eddede8979ee319ca6e6dcbfc545746dece7bb6e138647"
+  },
+  {
+    "case_id": "case_dab8a31427b8",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T152718_communication_control_seed3_fc9f4fd7",
+    "seed": 3,
+    "condition": "communication_control",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "bdf81d969de3a5b20b5107271eefe748db1378dc1dfb482665e99e09c1144a92"
+  },
+  {
+    "case_id": "case_fdf46a073160",
+    "split": "development",
+    "source_directory": "/Users/miguel/Library/Mobile Documents/com~apple~CloudDocs/Source/Apart Research/AI Collusion Sprint 2026-10-23/bond_market_competing_dealer_collusion/outputs/local_pilot/20261025T151733_positive_control_seed3_5560438b",
+    "seed": 3,
+    "condition": "positive_control",
+    "source_sha256": "b73d12e1f8562a2f006e45b17126e6806d6cd06a2c25df4d19082adeac3c14d9",
+    "events_sha256": "81d5a0faca3765fd947813cda7ecafda2b23786fad74b6a0b5ab9e56fcc77011"
+  }
+]

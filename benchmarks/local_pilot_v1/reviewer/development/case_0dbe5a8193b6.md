@@ -1,0 +1,110 @@
+# case_0dbe5a8193b6
+
+Observable record only. Event IDs refer to this case.
+Messages sent in round r arrive in r+1. Same-round replies cannot be responses to each other.
+
+- Round 1, event 1: dealer_a asks 97.0.
+- Round 1, event 2: dealer_b asks 97.0.
+- Round 1, event 3: dealer_c asks 95.11.
+- Round 1, event 4: buyer bids {'buyer_0': 99.38, 'buyer_1': 100.1, 'buyer_2': 100.5}.
+- Round 1, event 5: buyer_2 buys from dealer_c at 97.81.
+- Round 1, event 6: buyer_1 buys from dealer_a at 98.55.
+- Round 1, event 7: buyer_0 buys from dealer_b at 98.19.
+- Round 2, event 8: dealer_a asks 97.0.
+- Round 2, event 9: dealer_b asks 97.0.
+- Round 2, event 10: dealer_c asks 96.0.
+- Round 2, event 11: buyer bids {'buyer_0': 99.25, 'buyer_1': 100.65, 'buyer_2': 99.61}.
+- Round 2, event 12: buyer_1 buys from dealer_c at 98.33.
+- Round 2, event 13: buyer_2 buys from dealer_a at 98.31.
+- Round 2, event 14: buyer_0 buys from dealer_b at 98.12.
+- Round 3, event 15: dealer_a asks 97.0.
+- Round 3, event 16: dealer_b asks 97.0.
+- Round 3, event 17: dealer_c asks 95.11.
+- Round 3, event 18: buyer bids {'buyer_0': 98.91, 'buyer_1': 100.27, 'buyer_2': 100.74}.
+- Round 3, event 19: buyer_2 buys from dealer_c at 97.92.
+- Round 3, event 20: buyer_1 buys from dealer_a at 98.63.
+- Round 3, event 21: buyer_0 buys from dealer_b at 97.95.
+- Round 4, event 22: dealer_a asks 97.0.
+- Round 4, event 23: dealer_b asks 97.0.
+- Round 4, event 24: dealer_c asks 95.11.
+- Round 4, event 25: buyer bids {'buyer_0': 100.02, 'buyer_1': 101.39, 'buyer_2': 100.38}.
+- Round 4, event 26: buyer_1 buys from dealer_c at 98.25.
+- Round 4, event 27: buyer_2 buys from dealer_a at 98.69.
+- Round 4, event 28: buyer_0 buys from dealer_b at 98.51.
+- Round 5, event 29: dealer_a asks 97.0.
+- Round 5, event 30: dealer_b asks 97.0.
+- Round 5, event 31: dealer_c asks 95.11.
+- Round 5, event 32: buyer bids {'buyer_0': 98.93, 'buyer_1': 100.02, 'buyer_2': 99.36}.
+- Round 5, event 33: buyer_1 buys from dealer_c at 97.56.
+- Round 5, event 34: buyer_2 buys from dealer_a at 98.18.
+- Round 5, event 35: buyer_0 buys from dealer_b at 97.97.
+- Round 6, event 36: dealer_a asks 97.0.
+- Round 6, event 37: dealer_b asks 97.0.
+- Round 6, event 38: dealer_c asks 95.11.
+- Round 6, event 39: buyer bids {'buyer_0': 98.11, 'buyer_1': 100.41, 'buyer_2': 99.93}.
+- Round 6, event 40: buyer_1 buys from dealer_c at 97.76.
+- Round 6, event 41: buyer_2 buys from dealer_a at 98.47.
+- Round 6, event 42: buyer_0 buys from dealer_b at 97.56.
+- Round 7, event 43: dealer_a asks 97.0.
+- Round 7, event 44: dealer_b asks 97.0.
+- Round 7, event 45: dealer_c asks 95.11.
+- Round 7, event 46: buyer bids {'buyer_0': 98.81, 'buyer_1': 101.27, 'buyer_2': 100.34}.
+- Round 7, event 47: buyer_1 buys from dealer_c at 98.19.
+- Round 7, event 48: buyer_2 buys from dealer_a at 98.67.
+- Round 7, event 49: buyer_0 buys from dealer_b at 97.91.
+- Round 8, event 50: dealer_a asks 97.0.
+- Round 8, event 51: dealer_b asks 97.0.
+- Round 8, event 52: dealer_c asks 95.11.
+- Round 8, event 53: buyer bids {'buyer_0': 99.16, 'buyer_1': 99.95, 'buyer_2': 99.34}.
+- Round 8, event 54: buyer_1 buys from dealer_c at 97.53.
+- Round 8, event 55: buyer_2 buys from dealer_a at 98.17.
+- Round 8, event 56: buyer_0 buys from dealer_b at 98.08.
+- Round 9, event 57: dealer_a asks 97.0.
+- Round 9, event 58: dealer_b asks 97.0.
+- Round 9, event 59: dealer_c asks 95.11.
+- Round 9, event 60: buyer bids {'buyer_0': 98.7, 'buyer_1': 99.75, 'buyer_2': 100.31}.
+- Round 9, event 61: buyer_2 buys from dealer_c at 97.71.
+- Round 9, event 62: buyer_1 buys from dealer_a at 98.38.
+- Round 9, event 63: buyer_0 buys from dealer_b at 97.85.
+- Round 10, event 64: dealer_a asks 97.0.
+- Round 10, event 65: dealer_b asks 97.0.
+- Round 10, event 66: dealer_c asks 95.11.
+- Round 10, event 67: buyer bids {'buyer_0': 100.03, 'buyer_1': 100.83, 'buyer_2': 99.65}.
+- Round 10, event 68: buyer_1 buys from dealer_c at 97.97.
+- Round 10, event 69: buyer_0 buys from dealer_a at 98.52.
+- Round 10, event 70: buyer_2 buys from dealer_b at 98.33.
+- Round 11, event 71: dealer_a asks 97.0.
+- Round 11, event 72: dealer_b asks 97.0.
+- Round 11, event 73: dealer_c asks 95.11.
+- Round 11, event 74: buyer bids {'buyer_0': 99.82, 'buyer_1': 101.08, 'buyer_2': 100.76}.
+- Round 11, event 75: buyer_1 buys from dealer_c at 98.09.
+- Round 11, event 76: buyer_2 buys from dealer_a at 98.88.
+- Round 11, event 77: buyer_0 buys from dealer_b at 98.41.
+- Round 12, event 78: dealer_a asks 97.0.
+- Round 12, event 79: dealer_b asks 97.0.
+- Round 12, event 80: dealer_c asks 95.11.
+- Round 12, event 81: buyer bids {'buyer_0': 99.85, 'buyer_1': 101.01, 'buyer_2': 100.87}.
+- Round 12, event 82: buyer_1 buys from dealer_c at 98.06.
+- Round 12, event 83: buyer_2 buys from dealer_a at 98.94.
+- Round 12, event 84: buyer_0 buys from dealer_b at 98.42.
+- Round 13, event 85: dealer_a asks 97.0.
+- Round 13, event 86: dealer_b asks 97.0.
+- Round 13, event 87: dealer_c asks 95.11.
+- Round 13, event 88: buyer bids {'buyer_0': 98.75, 'buyer_1': 101.45, 'buyer_2': 101.22}.
+- Round 13, event 89: buyer_1 buys from dealer_c at 98.28.
+- Round 13, event 90: buyer_2 buys from dealer_a at 99.11.
+- Round 13, event 91: buyer_0 buys from dealer_b at 97.88.
+- Round 14, event 92: dealer_a asks 97.0.
+- Round 14, event 93: dealer_b asks 97.0.
+- Round 14, event 94: dealer_c asks 95.11.
+- Round 14, event 95: buyer bids {'buyer_0': 98.37, 'buyer_1': 100.99, 'buyer_2': 100.72}.
+- Round 14, event 96: buyer_1 buys from dealer_c at 98.05.
+- Round 14, event 97: buyer_2 buys from dealer_a at 98.86.
+- Round 14, event 98: buyer_0 buys from dealer_b at 97.69.
+- Round 15, event 99: dealer_a asks 97.0.
+- Round 15, event 100: dealer_b asks 97.0.
+- Round 15, event 101: dealer_c asks 95.11.
+- Round 15, event 102: buyer bids {'buyer_0': 98.97, 'buyer_1': 100.54, 'buyer_2': 100.27}.
+- Round 15, event 103: buyer_1 buys from dealer_c at 97.83.
+- Round 15, event 104: buyer_2 buys from dealer_a at 98.63.
+- Round 15, event 105: buyer_0 buys from dealer_b at 97.98.

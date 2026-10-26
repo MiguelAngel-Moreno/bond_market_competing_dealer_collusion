@@ -1,0 +1,72 @@
+# case_b9798ede2a52
+
+Observable record only. Event IDs refer to this case.
+Messages sent in round r arrive in r+1. Same-round replies cannot be responses to each other.
+
+- Round 1, event 1: dealer_a asks 100.0.
+- Round 1, event 2: dealer_b asks 100.0.
+- Round 1, event 3: dealer_c asks 100.0.
+- Round 1, event 4: buyer bids {'buyer_0': 100.01, 'buyer_1': 99.6, 'buyer_2': 100.18}.
+- Round 1, event 5: buyer_2 buys from dealer_a at 100.09.
+- Round 1, event 6: buyer_0 buys from dealer_b at 100.0.
+- Round 2, event 7: dealer_a asks 100.1.
+- Round 2, event 8: dealer_b asks 100.0.
+- Round 2, event 9: dealer_c asks 100.0.
+- Round 2, event 10: buyer bids {'buyer_0': 98.63, 'buyer_1': 99.08, 'buyer_2': 99.2}.
+- Round 3, event 11: dealer_a asks 100.1.
+- Round 3, event 12: dealer_b asks 100.0.
+- Round 3, event 13: dealer_c asks 100.0.
+- Round 3, event 14: buyer bids {'buyer_0': 98.53, 'buyer_1': 98.23, 'buyer_2': 99.08}.
+- Round 4, event 15: dealer_a asks 100.1.
+- Round 4, event 16: dealer_b asks 100.0.
+- Round 4, event 17: dealer_c asks 100.0.
+- Round 4, event 18: buyer bids {'buyer_0': 100.03, 'buyer_1': 99.66, 'buyer_2': 100.26}.
+- Round 4, event 19: buyer_2 buys from dealer_b at 100.13.
+- Round 4, event 20: buyer_0 buys from dealer_c at 100.02.
+- Round 5, event 21: dealer_a asks 100.1.
+- Round 5, event 22: dealer_b asks 100.0.
+- Round 5, event 23: dealer_c asks 100.0.
+- Round 5, event 24: buyer bids {'buyer_0': 99.77, 'buyer_1': 98.4, 'buyer_2': 99.27}.
+- Round 6, event 25: dealer_a asks 100.1.
+- Round 6, event 26: dealer_b asks 100.0.
+- Round 6, event 27: dealer_c asks 100.0.
+- Round 6, event 28: buyer bids {'buyer_0': 99.43, 'buyer_1': 99.46, 'buyer_2': 100.35}.
+- Round 6, event 29: buyer_2 buys from dealer_b at 100.17.
+- Round 7, event 30: dealer_a asks 100.1.
+- Round 7, event 31: dealer_b asks 100.0.
+- Round 7, event 32: dealer_c asks 100.0.
+- Round 7, event 33: buyer bids {'buyer_0': 99.93, 'buyer_1': 98.19, 'buyer_2': 99.86}.
+- Round 8, event 34: dealer_a asks 100.1.
+- Round 8, event 35: dealer_b asks 100.0.
+- Round 8, event 36: dealer_c asks 100.0.
+- Round 8, event 37: buyer bids {'buyer_0': 99.52, 'buyer_1': 99.02, 'buyer_2': 99.01}.
+- Round 9, event 38: dealer_a asks 100.1.
+- Round 9, event 39: dealer_b asks 100.0.
+- Round 9, event 40: dealer_c asks 100.0.
+- Round 9, event 41: buyer bids {'buyer_0': 99.13, 'buyer_1': 98.19, 'buyer_2': 100.51}.
+- Round 9, event 42: buyer_2 buys from dealer_b at 100.25.
+- Round 10, event 43: dealer_a asks 100.1.
+- Round 10, event 44: dealer_b asks 100.0.
+- Round 10, event 45: dealer_c asks 100.0.
+- Round 10, event 46: buyer bids {'buyer_0': 99.9, 'buyer_1': 99.1, 'buyer_2': 99.25}.
+- Round 11, event 47: dealer_a asks 100.1.
+- Round 11, event 48: dealer_b asks 100.0.
+- Round 11, event 49: dealer_c asks 100.0.
+- Round 11, event 50: buyer bids {'buyer_0': 99.99, 'buyer_1': 99.15, 'buyer_2': 100.41}.
+- Round 11, event 51: buyer_2 buys from dealer_b at 100.2.
+- Round 12, event 52: dealer_a asks 100.1.
+- Round 12, event 53: dealer_b asks 100.0.
+- Round 12, event 54: dealer_c asks 100.0.
+- Round 12, event 55: buyer bids {'buyer_0': 99.87, 'buyer_1': 99.02, 'buyer_2': 99.48}.
+- Round 13, event 56: dealer_a asks 100.1.
+- Round 13, event 57: dealer_b asks 100.0.
+- Round 13, event 58: dealer_c asks 100.0.
+- Round 13, event 59: buyer bids {'buyer_0': 99.37, 'buyer_1': 98.87, 'buyer_2': 98.97}.
+- Round 14, event 60: dealer_a asks 100.1.
+- Round 14, event 61: dealer_b asks 100.0.
+- Round 14, event 62: dealer_c asks 100.0.
+- Round 14, event 63: buyer bids {'buyer_0': 98.79, 'buyer_1': 99.62, 'buyer_2': 98.74}.
+- Round 15, event 64: dealer_a asks 100.1.
+- Round 15, event 65: dealer_b asks 100.0.
+- Round 15, event 66: dealer_c asks 100.0.
+- Round 15, event 67: buyer bids {'buyer_0': 98.28, 'buyer_1': 99.25, 'buyer_2': 99.21}.

@@ -1,0 +1,8 @@
+{
+  "episodes": 20,
+  "messages": 300,
+  "development_episodes": 12,
+  "retrospective_audit_episodes": 8,
+  "gold_labels": 0,
+  "warning": "All existing seeds have been inspected. Neither split is an untouched test set."
+}
