@@ -1,9 +1,18 @@
+# Team Rogue Agents in Jail 🕵️🕵️‍♀️👮‍♂️: Detecting Secret Hidden Messages and Collusion — AI Collusion Research Sprint, Oct 23–25, 2026
+
 <img width="2752" height="1536" alt="Algorithmic collusion detection AI guardrail" src="https://github.com/user-attachments/assets/87bd51a9-12c7-451b-a802-e0ee9b9e2b64" />
 
-# Team Rogue Agents in Jail 🕵️🕵️‍♀️👮‍♂️: Detecting Secret Hidden Messages and Collusion
-
+Co-organised by Apart Research, Poseidon Research, and AE Studio, with support from Modal and The AI Alignment Foundation. Online, with in-person hubs at Collider (New York City) and AI Safety Hong Kong.
 
 # Making AI Guardrails Understandable and Testable: A Framework Illustrated by a Simulated Bond Market
+
+https://apartresearch.com/sprints/projects/making-ai-guardrails-understandable-and-testable-a-framework-illustrated-by-a-simulated-bond-market-spgz
+
+## TL;DR
+
+We built a detective guardrail that detects steganographic collusion between AI dealer agents in a simulated bond market. The detector reads the gap between what agents say they're doing and what they actually do across repeated episodes, using matched randomisation and dual independent LLM labelling to separate collusive intent from benign convergence. The goal is to produce safety evidence that a compliance officer, auditor, or regulator can act on without a data scientist standing over their shoulder.
+
+## Abstract
 
 In order to advance AI safety research into shaping public policy, the development of technical controls needs to have a clear purpose, evidence, and limitations that are understandable for the people responsible for using and overseeing them. We propose a practical framework to connect a specific risk and realistic failure mechanism to a guardrail, an evaluation, and a decision that shows a duty of care. 
 
@@ -21,9 +30,66 @@ The method is particularly relevant or a wide range of guardrails in the real-wo
 
 For example, a guardrail may be employed to prevent discriminatory bias in a dataset, however agents may adapt their communication to employ stenography by using word choices that secretly bypass the guardrail. This paper offers a worked method to connect technical safety research to oversight decisions, that enterprises are already required to adopt.
 
-https://apartresearch.com/sprints/projects/making-ai-guardrails-understandable-and-testable-a-framework-illustrated-by-a-simulated-bond-market-spgz
+# Background
 
-# Bond market competing dealer collusion
+## Introduction
+
+For AI safety research to play a meaningful role in policy development, it is important to understand the different approaches to AI governance. Hong Kong prefers to provide guidance in specific sectors and to review of AI as part of existing laws (PDPO, financial regulation, copyright, consumer protection) with AI agent safety management guidelines targeted for 2027, while New York has introduced separate new laws that cover frontier model legislation (RAISE Act) wtih a safety framework and reporting effective Jan 2027.
+
+Legal accountability remains with firms and responsible people, not with the software agents acting for them. Delegating an activity does not transfer those duties to the model. Hong Kong's Main Board Listing Rule 3.08 states that delegation does not absolve directors of their responsibilities. Breaches can expose directors to disciplinary action or to civil or criminal liability. Liability is not automatic whenever an agent makes a mistake [24]. The Hong Kong Securities and Futures Commission places AI governance responsibilities on the senior management of licensed firms. In the US, FINRA confirms that existing obligations still apply to its member firms when they use AI.
+
+These duties sit alongside different policy approaches. Hong Kong combines sectoral guidance with review of existing law. New York State's amended RAISE Act adds safety-framework and reporting duties for covered frontier developers from 1 January 2027. Its catastrophic-risk remit is distinct from routine trading oversight.
+
+Enterprises and boards need to determine if their AI guardrails are compliant and actually work and how this can be proven, as they are responsible for oversight of agents, particularly as the risks of rogue AI agents have been newsworthy. The first layer of defence is to apply systems architecture controls (sandboxing, hardware isolation, agent identities, least-privilege access rights and enforcement, monitoring) to restrict execution, memory access and access right and depend upon isolation and implementation to  mitigate threats including kernel exploits, zero-day code execution, unauthorised memory or cache access.
+
+However, directors should be aware that there is a residual risk specific to deployment of AI agents that these do not mitigate. AI agents in a trading system that have normal access to market data, customer data, tool permissions and can send messages to other agents or place orders have a different risk traditional methods do not mitigate. The risk isn't that they break out of their sandbox but that they use the tools they have access to in ways they weren't intended in steganographic collusion. They can encode hidden secret messages to other agents in normal looking communication via the words they choose to use, the timing of their messages, or systems tools left available to them so there is a gap between what they say they're doing compared to what they actually do.
+
+## AI agents need behavioural oversight
+
+The missing solution is a detector that checks if an agent's reasoning doesn't match its actions and raises a flag for a Human-in-the-Loop to review.  Even if you employ guardrails, you don't know if they work if you don't have a way to detect they are followed. This helps to answer the questions from the people (compliance officer, auditor, or board member) who has to sign off on a system "do we have a way to know if the agents are coordinating in a way that we did not intend them to?"
+
+It is helpful to understand that not all collusion should be regulated and people often mix them together. Human-human collusion (e.g. price fixing, manipulating trades or quotes) is already regulated by laws (anti-competition, market abuse or securities laws), but two humans acting in parallel to independently raise prices is allowed so parallel behavior is not proof of illegal behavior on its own. Human-agent collusion is a key risk since a human builds, configures and instructs an agent. Hence, firms need to show care in how they design and deploy their agents. 
+
+However, agent-agent communication can naturally arise to independently coordinate their behaviour without a human telling them to, so no "meeting of the minds" occurs as required in anti-trust law, but clients can still be harmed and fiduciary or best execution duties can still be breached. This laws on this are murky as agent's may spontaneously tacitly collude as a result of being given similar goals with communication and it may not be a result of secret communication but naturally arises. Enterprises need a clearer understanding of applicable laws as the goal of for-profit organizations is to maximize profits for shareholders, so intentionally curbing this without any legal requirement to do so may be in conflict with duties to shareholders.
+
+To focus on the key risk of human-agent collusion, *Reward hacking* behaviour must be understood as LLMs that undergo reward hacking in RL to achieve a goal are sensitive to semantic manipulation if given poorly worded prompts and put under pressure. [18]  Reward hacking means an AI system finds a way to score highly on a goal without doing what the designer intended. Many mitigations (adversarial reward design, reward capping, training on non-gaming data) can only be used when training LLMs so frontier model developers or open-source models can use these methods to mitigate risks, but enterprises still retain liability because they choose which models to deploy, they design the channels, incentives and roles of agents, and deploy this to cliencts. So LLMs should harden their models against reward hacking, but enterprises need to deploy guardrails and prove they work.
+
+## The framework: connecting a risk to a responsible decision
+
+In a nutshell, an AI agent uses tools, messages, and actions to meet a goal. A guardrail limits (or checks) what it does, but effectiveness needs a way to test with data so that both technical and non-technical teams can review what is happening. We used a simplified bond market trading example to build a sample set to train a detector that looks for coordination between agents that already have permission to communicate and trade.
+
+We compare what an agent says it is doing vs. what we can see an agent does and repeat this in simulations to see if we can detect the patterns of collusion using part of our training data to build a detection method and the rest of the data to validate that the dectection method works. Once a mismatch is identified, this gets raised for human review. Directors should treat agent guardrails as part of the same control family as algorithmic-trading governance and this follows the relationship between governance, measurement, and management
+
+## How Coordination Happens Between Agents
+
+Ezrachi and Stucke distinguish four non-exclusive scenarios. In Messenger, humans agree on a plan and use software to implement or monitor it. In Hub-and-Spoke, a common intermediary can coordinate otherwise separate users. Predictable Agent describes independently deployed algorithms whose designed responses are easier to anticipate. In Digital Eye, learning agents discover profitable patterns without an explicit human agreement to coordinate.
+
+##  How this can affect pricing in markets
+
+Fish, Gonczarowski, and Shorrer found that LLM pricing agents reached prices above competitive benchmarks in controlled oligopoly experiments, and that instruction wording affected those prices. Amodei and colleagues describe reward hacking: optimising a proxy objective without delivering its intended outcome. That concept explains why a profit objective needs constraints. It does not diagnose every instance of coordination as reward hacking. Mathew and colleagues elicited hidden linguistic signalling under constructed incentives and oversight. Detecting that collusion occurred does not mean that concealed communication is the same so we test this.
+
+## Limitations of price simulations when applied to Trading in Real Financial Markets
+
+Prior market models show various levels of complexity in simulating actual market situations. Agrawal and colleagues used a double auction in which LLM sellers could chat, and they varied oversight and pressure from an authority figure. Cournot isolates how much each producer supplies when total output sets the price. Kyle models one informed trader, noise traders, and market makers who infer value from order flow. Dou, Goldstein, and Ji studied informed speculators who learned strategies by reinforcement learning. Collusive outcomes arose without chatting. As expected, in low volume, low liquidity securities trading, a higher risk of collusion could occur and when noise traders dominated informed investors that priced in market news and the fundamental value of changes, the simulations showed that Q-learning bias from RL could be learned if noise training dominated that security’s trading volume, and this increased mispricing. So price level alone is not a good measure of harm and timing needs to be studied. Bessembinder, Spatt, and Venkataraman document dealer networks and limited transparency in fixed-income markets. Those features motivate the setting. They do not make bonds inherently simpler than equities.
+
+Note: References are available in the whitepaper link above.
+
+## Why did we choose to model a simplified bond market?
+
+A bond is a debt instrument; a dealer quotes prices and trades with customers. Dealer relationships and differences in access to information make many fixed-income markets a useful setting for examining incentives, communication, and customer outcomes. The specified example has three dealers, three rule-based buyers, one instrument, fixed-size trades, and 15 rounds. It uses private costs and valuations, repeated interaction, and opportunities to communicate, which is enough complexity for a substantive coordination problem.
+
+Equities as an asset class were already used in Dou's paper. In our scenario, we distilled the number of test variables to be able to limit the complexity and number of iterations needed for a weekend project so we made a simplying assumption to ignore depth, cancellations, execution priority, and liquidity. Real bond trading is far more complex with movement due to interest rates, credit, maturity, inventory, and settlement. We removed these variables so that we could isolate the mechanisms as the only variables under study, at the cost of realism.
+
+**Table 1. Some questions a director would ask**
+
+| Concept | Question to answer | Bond-market example |
+|---|---|---|
+| Risk and mechanism | What outcome concerns us, and how could it arise? | A shared-profit objective and private communication could support coordination at buyers' expense. |
+| Control | What can prevent, detect, or contain the behaviour? | Restrict a communication channel or flag evidence linking a proposal to subsequent actions. |
+| Evidence and test | What would distinguish success, failure, and an innocent explanation? | Compare conditions under matched market inputs; test detection on reserved episodes and examine misses and false alarms. |
+| Decision and ownership | Who acts, on what basis, and with what uncertainty? | A named owner reviews an alert, investigates or intervenes, and records the reason. |
+
+# How to understand how this bond market competing dealer collusion was designed
 
 A standalone adaptation of `../collusion_hackathon/llm-agent-collusion`, for studying price coordination between synthetic bond dealers. This is a runnable experimental starting point, not a production bond market or validated collusion detector.
 
@@ -272,3 +338,8 @@ classification. It is offline and makes no inference calls.
 uv run python -m bond_market.evaluate_detector_v2 benchmarks/local_pilot_v1 \
   --output outputs/detector_v2_new_evaluation
 ```
+
+## About the Authors
+June Lai | CEO at Catalyst® · AI Governance Educator · Internal Auditor of Board Director Program · Systems Thinker · CFA, CPA, CMA linkedin.com/in/junelaiceo
+
+Miguel Moreno | AI, IT Hardware & Software Solutions Architect · Electrical Engineer · Embedded Systems Design · | linkedin.com/in/miguel-angel-moreno-r
