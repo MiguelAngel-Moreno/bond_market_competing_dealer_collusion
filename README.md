@@ -1,3 +1,6 @@
+# Team Rogue Agents in Jail 🕵️🕵️‍♀️👮‍♂️: Detecting Secret Hidden Messages and Collusion
+
+
 # Making AI Guardrails Understandable and Testable: A Framework Illustrated by a Simulated Bond Market
 
 In order to advance AI safety research into shaping public policy, the development of technical controls needs to have a clear purpose, evidence, and limitations that are understandable for the people responsible for using and overseeing them. We propose a practical framework to connect a specific risk and realistic failure mechanism to a guardrail, an evaluation, and a decision that shows a duty of care. 
