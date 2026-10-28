@@ -111,11 +111,11 @@ The mock run is a scripted plumbing check. Its agents deliberately produce a det
 
 To keep a managed environment outside iCloud, set `UV_PROJECT_ENVIRONMENT="$HOME/.venvs/bond-market"` before using uv. This project has no editable local dependency. Without Rich, direct `python3 -m bond_market` still works and falls back to plain progress.
 
-## Local model: existing Qwen3-14B, MLX 4-bit
+## Local model: Qwen3-14B, MLX 4-bit
 
-Recommended first local baseline: `mlx-community/Qwen3-14B-4bit`, using your existing vLLM Metal installation and model download. It keeps this study comparable with your previous model runs and avoids another large download. This recommendation is about a practical baseline, not evidence that it is the most capable model.
+Recommended first local baseline: `mlx-community/Qwen3-14B-4bit`, using vLLM Metal installed locally and downloading the model. It keeps this study comparable with similar local model runs. This recommendation is about a practical baseline, not evidence that it is the most capable model.
 
-In a separate terminal, use your existing server if it already serves `qwen3-14b-local` on port 8020. Otherwise:
+In a separate terminal, use the existing server if it is already running and serves `qwen3-14b-local` on port 8020. Otherwise:
 
 ```sh
 vllm serve "$HOME/Models/Qwen3-14B-4bit" \
@@ -126,7 +126,7 @@ vllm serve "$HOME/Models/Qwen3-14B-4bit" \
   --default-chat-template-kwargs '{"enable_thinking": false}'
 ```
 
-These flags follow your existing setup; support depends on the installed vLLM Metal version. Run the server from your normal terminal. The runner also requests `enable_thinking: false` per request. If your installed server rejects that request parameter, remove `extra_body` from `bond_market/configs/local.json` **only after** confirming the server-level default disables thinking. Do not silently change inference mode between conditions.
+These flags follow a standard setup; support depends on the installed vLLM Metal version. Run the server from your normal terminal. The runner also requests `enable_thinking: false` per request. If the installed server rejects that request parameter, remove `extra_body` from `bond_market/configs/local.json` **only after** confirming the server-level default disables thinking. Do not silently change inference mode between conditions.
 
 Check the served model name:
 
